@@ -1,34 +1,48 @@
 {
-  description = "A Nix Flake to install Bun, Node.js, GitHub CLI (gh), and ddclient";
+  description = "Nix flake for installing bun, fnm, gh, ddclient, and global npm packages";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs";
   };
 
   outputs = { self, nixpkgs }: {
-    defaultPackage.x86_64-linux = self.packages.x86_64-linux;
-    packages = import nixpkgs {
-      system = "x86_64-linux";
-    };
+    defaultPackage.x86_64-linux = self.packages.x86_64-linux.default;
+    packages = {
+      x86_64-linux = let
+        system = "x86_64-linux";
+        pkgs = import nixpkgs {
+          inherit system;
+        };
+      in {
+        default = pkgs.mkShell {
+          buildInputs = with pkgs; [
+            bun
+            fnm
+            gh
+            ddclient
+          ];
 
-    packages.x86_64-linux.default = pkgs.mkShell {
-      buildInputs = [
-        pkgs.bun
-        pkgs.nodejs
-        pkgs.gh
-        pkgs.ddclient
-      ];
-    };
+          # Automatically use fnm and install global npm packages
+          shellHook = ''
+            # Initialize fnm in the shell environment
+            eval "$(fnm env)"
 
-    devShells = {
-      x86_64-linux = pkgs.mkShell {
-        buildInputs = [
-          pkgs.bun
-          pkgs.nodejs
-          pkgs.gh
-          pkgs.ddclient
-        ];
+            # Use the Node.js version specified in .nvmrc or .node-version if present
+            if [ -f .nvmrc ]; then
+              fnm use
+            fi
+
+            # Install global npm packages if not already installed
+            global_packages="@antfu/ni"
+            for pkg in $global_packages; do
+                bun install -g $pkg
+            done
+          '';
+        };
       };
+    };
+    devShells = {
+      x86_64-linux.default = self.packages.x86_64-linux.default;
     };
   };
 }

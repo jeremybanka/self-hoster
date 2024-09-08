@@ -1,0 +1,6 @@
+{
+  "name": "self-hoster",
+  "devDependencies": {
+    "flightdeck": "0.0.1"
+  }
+}
