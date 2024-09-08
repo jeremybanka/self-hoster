@@ -18,8 +18,9 @@
           buildInputs = with pkgs; [
             bun
             fnm
-            gh
             ddclient
+            gh
+            nginx
           ];
 
           # Automatically use fnm and install global npm packages
