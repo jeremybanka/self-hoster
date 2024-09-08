@@ -1,15 +1,16 @@
 {
-	"app": "my-app",
-	"repo": "repo",
-	"runCmd": ["./repo/my-app"],
+	"app": "example",
+	"repo": "some-repo",
+	"runCmd": ["./some-repo/example"],
 	"secret": "secret",
 	"serviceDir": "services",
 	"updateCmd": [
 		"bun",
 		"build",
-		"./app.ts",
+		"./example.bun.ts",
 		"--bundle",
+		"--minify",
 		"--outfile",
-		"update/repo/my-app"
+		"services/update/some-repo/example"
 	]
 }

@@ -1,5 +1,9 @@
 {
   "name": "self-hoster",
+  "scripts": {
+    "start": "flightdeck",
+    "test": "./flightdeck.test-update.node.ts"
+  },
   "devDependencies": {
     "flightdeck": "0.0.1"
   }

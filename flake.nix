@@ -1,5 +1,5 @@
 {
-  description = "Nix flake for installing bun, fnm, gh, ddclient, and global npm packages";
+  description = "Let's self-host a TypeScript application";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs";
@@ -27,16 +27,16 @@
           # Initialize fnm in the shell environment
           eval "$(fnm env)"
 
-          # Use the Node.js version specified in .nvmrc or .node-version if present
           if [ -f .nvmrc ]; then
             fnm use
           fi
 
-          # Install global npm packages if not already installed
           global_packages="@antfu/ni"
           for pkg in $global_packages; do
               bun install -g $pkg
           done
+
+          export PATH="$HOME/.bun/bin:$PATH"
         '';
       };
     });
