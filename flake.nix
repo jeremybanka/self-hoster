@@ -1,48 +1,34 @@
 {
-  description = "Flake to set up Bun, Colima, and Docker environment for running a container";
+  description = "A Nix Flake to install Bun, Node.js, GitHub CLI (gh), and ddclient";
 
   inputs = {
-    nixpkgs.url = "nixpkgs/nixos-unstable";
-    flake-utils.url = "github:numtide/flake-utils";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
 
-  outputs = { self, nixpkgs, flake-utils }: flake-utils.lib.eachDefaultSystem (system:
-    let
-      pkgs = import nixpkgs { inherit system; };
-    in
-    {
-      devShell = pkgs.mkShell {
-        # Packages to install
+  outputs = { self, nixpkgs }: {
+    defaultPackage.x86_64-linux = self.packages.x86_64-linux;
+    packages = import nixpkgs {
+      system = "x86_64-linux";
+    };
+
+    packages.x86_64-linux.default = pkgs.mkShell {
+      buildInputs = [
+        pkgs.bun
+        pkgs.nodejs
+        pkgs.gh
+        pkgs.ddclient
+      ];
+    };
+
+    devShells = {
+      x86_64-linux = pkgs.mkShell {
         buildInputs = [
-          pkgs.bun        # Bun package manager
-          pkgs.colima     # Colima for Docker container management
-          pkgs.docker     # Docker for running containers
+          pkgs.bun
+          pkgs.nodejs
+          pkgs.gh
+          pkgs.ddclient
         ];
-
-        # Ensure Docker daemon is running via Colima
-        shellHook = ''
-          echo "Starting Colima and Docker..."
-          colima start
-          sudo ln -sf ${pkgs.docker}/bin/docker /usr/local/bin/docker  # Ensure Docker command works properly
-        '';
-
-        # Extra environment configuration if needed
-        COLIMA_DEFAULT = "true";
       };
-
-      # Additional NixOS configuration for services if needed
-      nixosConfigurations = {
-        dockerHost = pkgs.nixos.lib.nixosSystem {
-          system = "x86_64-linux";
-          modules = [ 
-            {
-              services.docker = {
-                enable = true;
-                socketActivation = true;
-              };
-            }
-          ];
-        };
-      };
-    }));
+    };
+  };
 }
