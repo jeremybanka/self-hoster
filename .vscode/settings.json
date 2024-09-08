@@ -1,0 +1,14 @@
+{
+	"cSpell.words": ["outfile"],
+	"json.schemas": [
+		{
+			"fileMatch": ["**/flightdeck.config.json"],
+			"url": "./node_modules/flightdeck/dist/flightdeck.main.schema.json"
+		}
+	],
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "biomejs.biome",
+	"editor.codeActionsOnSave": {
+		"quickfix.biome": "explicit"
+	}
+}
