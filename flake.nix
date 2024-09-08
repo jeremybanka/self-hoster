@@ -6,9 +6,9 @@
   };
 
   outputs = { self, nixpkgs }: let
-    systems = [ "x86_64-linux" "x86_64-darwin" "aarch64-linux" "aarch64-darwin" ]; # Add both ARM (aarch64) and x86_64 for Linux and macOS
+    systems = [ "x86_64-linux" "x86_64-darwin" "aarch64-linux" "aarch64-darwin" ]; # Support ARM (aarch64) and x86_64 for Linux and macOS
   in {
-    packages = forEach systems (system: let
+    packages = nixpkgs.lib.genAttrs systems (system: let
       pkgs = import nixpkgs {
         inherit system;
       };
@@ -40,6 +40,7 @@
         '';
       };
     });
-    devShells = forEach systems (system: self.packages.${system});
+    
+    devShells = nixpkgs.lib.genAttrs systems (system: self.packages.${system});
   }; 
 }
