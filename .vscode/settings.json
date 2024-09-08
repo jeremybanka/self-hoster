@@ -10,5 +10,8 @@
 	"editor.defaultFormatter": "biomejs.biome",
 	"editor.codeActionsOnSave": {
 		"quickfix.biome": "explicit"
+	},
+	"[nginx]": {
+		"editor.defaultFormatter": "AaaaronZhou.nginx-config-formatter-vscode-extension"
 	}
 }

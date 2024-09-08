@@ -1,3 +1,8 @@
 {
-	"recommendations": ["jnoortheen.nix-ide", "biomejs.biome", "oven.bun-vscode"]
+	"recommendations": [
+		"jnoortheen.nix-ide",
+		"biomejs.biome",
+		"oven.bun-vscode",
+		"aaaaronzhou.nginx-config-formatter-vscode-extension"
+	]
 }
