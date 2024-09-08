@@ -5,7 +5,7 @@ import { connect } from "node:http2";
 
 const secret = process.env.FLIGHTDECK_SECRET;
 
-const client = connect(`http://localhost:${process.env.PORT ?? 80}/`);
+const client = connect(`https://localhost:${process.env.PORT ?? 443}/`);
 
 const req = client.request({
 	":method": "POST",
