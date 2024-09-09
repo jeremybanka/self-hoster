@@ -20,6 +20,7 @@
           ddclient
           gh
           nginx
+          system-sendmail
         ];
 
         # Automatically use fnm and install global npm packages
