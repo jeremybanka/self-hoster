@@ -16,6 +16,7 @@
       default = pkgs.mkShell {
         buildInputs = with pkgs; [
           bun
+          certbot
           fnm
           ddclient
           gh
