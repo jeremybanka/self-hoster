@@ -1,0 +1,8 @@
+{
+	"compilerOptions": {
+		"module": "Preserve",
+		"noEmit": true,
+		"target": "ESNext",
+		"types": ["bun", "node"]
+	}
+}
