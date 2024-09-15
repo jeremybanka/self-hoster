@@ -1,5 +1,5 @@
 {
-	"cSpell.words": ["outfile"],
+	"cSpell.words": ["flightdeck", "hoster", "outfile"],
 	"json.schemas": [
 		{
 			"fileMatch": ["**/flightdeck.config.json"],
