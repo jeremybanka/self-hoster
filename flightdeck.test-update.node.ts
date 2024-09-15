@@ -3,9 +3,9 @@
 import type { IncomingHttpHeaders, IncomingHttpStatusHeader } from "node:http2";
 import { connect } from "node:http2";
 
-const secret = process.env.FLIGHTDECK_SECRET;
+const secret = process.env.SECRET;
 
-const client = connect(`https://localhost:${process.env.PORT ?? 443}/`);
+const client = connect(`http://localhost:${process.env.PORT ?? 80}/`);
 
 const req = client.request({
 	":method": "POST",
