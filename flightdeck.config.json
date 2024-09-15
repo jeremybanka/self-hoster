@@ -4,13 +4,5 @@
 	"runCmd": ["./some-repo/example"],
 	"secret": "secret",
 	"serviceDir": "services",
-	"updateCmd": [
-		"bun",
-		"build",
-		"./example.bun.ts",
-		"--bundle",
-		"--minify",
-		"--outfile",
-		"services/update/some-repo/example"
-	]
+	"updateCmd": ["./example-update.sh"]
 }
