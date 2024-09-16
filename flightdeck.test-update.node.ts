@@ -3,14 +3,12 @@
 import type { IncomingHttpHeaders, IncomingHttpStatusHeader } from "node:http2";
 import { connect } from "node:http2";
 
-const secret = process.env.SECRET;
-
-const client = connect(`http://localhost:${process.env.PORT ?? 80}/`);
+const client = connect(process.env.URL ?? "http://localhost:5555/");
 
 const req = client.request({
 	":method": "POST",
 	":path": "/",
-	authorization: `Bearer ${secret}`,
+	authorization: `Bearer ${process.env.SECRET}`,
 });
 
 const response = await new Promise<{
