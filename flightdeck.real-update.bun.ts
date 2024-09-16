@@ -7,19 +7,16 @@ import type { RestEndpointMethodTypes } from "@octokit/rest";
 await downloadLatestPackageRelease();
 /***********************************/
 
-const USER = import.meta.env.USER ?? "jeremybanka";
-const REPO = import.meta.env.REPO ?? "wayforge";
-const PROJ = import.meta.env.PROJ ?? "tempest.games";
-
 type ListReleasesResponse =
 	RestEndpointMethodTypes["repos"]["listReleases"]["response"]["data"];
 
 async function downloadLatestPackageRelease(
-	user: string = USER,
-	repo: string = REPO,
+	user: string = import.meta.env.USER ?? "jeremybanka",
+	repo: string = import.meta.env.REPO ?? "wayforge",
+	proj: string = import.meta.env.PROJ ?? "tempest.games",
 	outputDir = "./services/update",
 	compareFn: (release: ListReleasesResponse[number]) => boolean = (release) => {
-		return release.tag_name.startsWith(PROJ);
+		return release.tag_name.startsWith(proj);
 	},
 ) {
 	const releasesUrl = `https://api.github.com/repos/${user}/${repo}/releases`;
@@ -32,6 +29,7 @@ async function downloadLatestPackageRelease(
 				`Failed to fetch releases: ${releasesResponse.status} ${releasesResponse.statusText}`,
 			);
 		}
+		console.log(releasesResponse);
 
 		const releasesData =
 			(await releasesResponse.json()) as ListReleasesResponse;
