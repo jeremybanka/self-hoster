@@ -2,6 +2,6 @@
 	"packageName": "tempest.games",
 	"secret": "secret",
 	"services": { "frontend": { "run": ["./example"], "waitFor": true } },
-	"flightDeckRootDir": "./services",
+	"flightdeckRootDir": "./services",
 	"downloadPackageToUpdatesCmd": ["./example-update.sh"]
 }
