@@ -1,6 +1,6 @@
 {
 	"name": "self-hoster",
-	"types": "module",
+	"type": "module",
 	"scripts": {
 		"start": "flightdeck",
 		"test": "./flightdeck.test-update.node.ts"
