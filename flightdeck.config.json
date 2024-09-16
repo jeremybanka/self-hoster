@@ -1,8 +1,7 @@
 {
-	"app": "example",
-	"repo": "some-repo",
-	"runCmd": ["./some-repo/example"],
+	"packageName": "tempest.games",
 	"secret": "secret",
-	"serviceDir": "services",
-	"updateCmd": ["./example-update.sh"]
+	"services": { "frontend": { "run": ["./example"], "waitFor": true } },
+	"flightDeckRootDir": "./services",
+	"downloadPackageToUpdatesCmd": ["./example-update.sh"]
 }
