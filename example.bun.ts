@@ -8,9 +8,13 @@ const parentSocket = new ParentSocket();
 
 serve({
 	port: PORT,
-	fetch(req) {
+	async fetch(req) {
 		parentSocket.logger.info("🚀", req.method, req.url);
-		return new Response("Hello World!");
+		const text = await req.text();
+		if (text) {
+			parentSocket.logger.info("📬", { text });
+		}
+		return new Response("Welcome!");
 	},
 });
 
