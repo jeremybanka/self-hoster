@@ -7,6 +7,7 @@ iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT
 iptables -A INPUT -i lo -j ACCEPT
 iptables -A OUTPUT -i lo -j ACCEPT
 iptables -A INPUT -m conntrack --ctstate INVALID -j DROP
+iptables -A FORWARD -p tcp -m multiport --dports 3333,4444,5555 -j ACCEPT
 
 
 iptables -N port-scanning
