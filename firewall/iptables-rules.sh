@@ -14,6 +14,11 @@ iptables -N port-scanning
 iptables -A port-scanning -p tcp --tcp-flags SYN,ACK,FIN,RST RST -m limit --limit 1/s --limit-burst 2 -j RETURN
 iptables -A port-scanning -j DROP
 
+iptables -n LOGGING
+iptables -A INPUT -j LOGGING
+iptables -A LOGGING -m limit --limit 3/min -j LOGGING --log-prefix "IPTables-Dropped: " --log-level 4
+iptables -A LOGGING -j DROP
+
 iptables --policy INPUT DROP
 iptables --policy OUTPUT DROP
 iptables --policy FORWARD DROP
