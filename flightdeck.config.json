@@ -3,5 +3,8 @@
 	"secret": "secret",
 	"services": { "frontend": { "run": ["./example"], "waitFor": true } },
 	"flightdeckRootDir": "./services",
-	"downloadPackageToUpdatesCmd": ["./example-update.sh"]
+	"scripts": {
+		"download": "./example-update.sh",
+		"install": "echo 'Install!!'"
+	}
 }
