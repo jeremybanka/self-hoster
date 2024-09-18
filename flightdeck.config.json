@@ -1,10 +1,13 @@
 {
 	"packageName": "tempest.games",
 	"secret": "secret",
-	"services": { "frontend": { "run": ["./example"], "waitFor": true } },
+	"services": {
+		"frontend": { "run": "na frontend", "waitFor": false },
+		"backend": { "run": "na backend", "waitFor": true }
+	},
 	"flightdeckRootDir": "./services",
 	"scripts": {
-		"download": "./example-update.sh",
-		"install": "echo 'Install!!'"
+		"download": "echo 'Powered by Flightdeck'",
+		"install": "ni"
 	}
 }
