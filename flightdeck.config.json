@@ -7,7 +7,7 @@
 	},
 	"flightdeckRootDir": "./services",
 	"scripts": {
-		"download": "echo 'Powered by Flightdeck'",
-		"install": "ni"
+		"download": "echo '2024 TEMPEST GAMES'",
+		"install": "nu tempest.games --latest"
 	}
 }
