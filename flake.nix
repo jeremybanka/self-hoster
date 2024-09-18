@@ -23,14 +23,14 @@
           system-sendmail
         ];
 
-        # Automatically use fnm and install global npm packages
         shellHook = ''
-          # Initialize fnm in the shell environment
           eval "$(fnm env)"
 
           if [ -f .nvmrc ]; then
             fnm use
           fi
+
+          bun upgrade
 
           global_packages="@antfu/ni"
           for pkg in $global_packages; do
