@@ -1,0 +1,114 @@
+---
+- name: Setup for self-hosting a TypeScript application
+  hosts: all
+  become: yes
+  vars:
+    postgres_user: "{{ lookup('env', 'POSTGRES_USER') }}"
+    postgres_password: "{{ lookup('env', 'POSTGRES_PASSWORD') }}"
+    postgres_db_name: "{{ lookup('env', 'POSTGRES_DB') }}"
+    global_packages:
+      - "@antfu/ni"
+    bun_bin_path: "{{ ansible_env.HOME }}/.bun/bin"
+    system_packages:
+      - nginx
+      - ddclient
+      - postgresql-16
+
+  tasks:
+    - name: Install system packages (nginx, ddclient, postgresql)
+      ansible.builtin.package:
+        name: "{{ system_packages }}"
+        state: present
+      when: ansible_facts['os_family'] == "Debian" or ansible_facts['os_family'] == "RedHat"
+
+    - name: Install gh (GitHub CLI)
+      ansible.builtin.package:
+        name: gh
+        state: present
+      when: ansible_facts['os_family'] == "Debian" or ansible_facts['os_family'] == "RedHat"
+
+    - name: Install fnm (Fast Node Manager)
+      ansible.builtin.shell: |
+        curl -fsSL https://fnm.vercel.app/install | bash
+      args:
+        creates: "{{ ansible_env.HOME }}/.fnm"
+
+    - name: Add fnm to shell profile
+      ansible.builtin.lineinfile:
+        path: "{{ ansible_env.HOME }}/.bashrc"
+        line: 'eval "$(fnm env)"'
+        create: yes
+
+    - name: Install bun
+      ansible.builtin.shell: |
+        curl -fsSL https://bun.sh/install | bash
+      args:
+        creates: "{{ bun_bin_path }}"
+
+    - name: Upgrade bun
+      ansible.builtin.shell: |
+        {{ bun_bin_path }}/bun upgrade
+      when: bun_bin_path is defined
+
+    - name: Install global npm packages with bun
+      ansible.builtin.shell: |
+        for pkg in {{ global_packages | join(' ') }}; do
+          {{ bun_bin_path }}/bun install -g $pkg
+        done
+      when: bun_bin_path is defined
+
+    - name: Add bun to PATH
+      ansible.builtin.lineinfile:
+        path: "{{ ansible_env.HOME }}/.bashrc"
+        line: 'export PATH="{{ bun_bin_path }}:$PATH"'
+        create: yes
+
+    - name: Source updated shell profile
+      ansible.builtin.shell: |
+        source {{ ansible_env.HOME }}/.bashrc
+
+    - name: Ensure nginx is started and enabled
+      ansible.builtin.service:
+        name: nginx
+        state: started
+        enabled: yes
+
+    - name: Ensure ddclient is started and enabled
+      ansible.builtin.service:
+        name: ddclient
+        state: started
+        enabled: yes
+
+    - name: Ensure PostgreSQL 16 is installed and running
+      ansible.builtin.service:
+        name: postgresql
+        state: started
+        enabled: yes
+
+    - name: Create a PostgreSQL user
+      become_user: postgres
+      ansible.builtin.postgresql_user:
+        name: "{{ postgres_user }}"
+        password: "{{ postgres_password }}"
+        state: present
+
+    - name: Create a PostgreSQL database
+      become_user: postgres
+      ansible.builtin.postgresql_db:
+        name: "{{ postgres_db_name }}"
+        owner: "{{ postgres_user }}"
+        state: present
+
+    - name: Set Node.js version with fnm if .nvmrc is present
+      ansible.builtin.shell: |
+        if [ -f .nvmrc ]; then
+          fnm use
+        fi
+      args:
+        chdir: "{{ ansible_env.HOME }}/path_to_your_project"
+
+    - name: Add required Node.js global packages with bun
+      ansible.builtin.shell: |
+        for pkg in {{ global_packages | join(' ') }}; do
+          {{ bun_bin_path }}/bun install -g $pkg
+        done
