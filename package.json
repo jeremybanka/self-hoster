@@ -6,7 +6,7 @@
 		"test": "./flightdeck.test-update.node.ts"
 	},
 	"devDependencies": {
-		"@types/bun": "1.1.10",
+		"@types/bun": "1.1.11",
 		"@types/node": "22.7.5",
 		"flightdeck": "0.0.11",
 		"typescript": "5.6.3"
