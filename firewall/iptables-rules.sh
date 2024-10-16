@@ -5,9 +5,11 @@ iptables -A INPUT -p tcp -m multiport --dports 80,443,53 -m conntrack --ctstate 
 iptables -A OUTPUT -p tcp -m multiport --sports 80,443,53 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
 iptables -A INPUT -p udp --dport 53 -j ACCEPT
 iptables -A OUTPUT -p udp --sport 53 -j ACCEPT
-iptables -A OUTPUT -m conntrack --ctstate ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -p udp --dport 53 -j ACCEPT
+iptables -A OUTPUT -m conntrack --ctstate NEW.ESTABLISHED -j ACCEPT
 iptables -A INPUT -p tcp -m multiport --dports 22,2222 -j ACCEPT
 iptables -A OUTPUT -p tcp -m multiport --sports 22,2222 -j ACCEPT
+iptables -A OUTPUT -p tcp -m multiport --dports 22,2222 -j ACCEPT
 iptables -A INPUT -p icmp -j ACCEPT
 iptables -A OUTPUT -p icmp -j ACCEPT
 iptables -A INPUT -i lo -j ACCEPT
