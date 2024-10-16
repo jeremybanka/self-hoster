@@ -1,6 +1,6 @@
 ---
 - name: Setup for self-hosting a TypeScript application
-  hosts: localhost
+  hosts: all
   become: yes
   vars:
     postgres_user: "{{ lookup('env', 'POSTGRES_USER') }}"
@@ -12,7 +12,7 @@
     system_packages:
       - nginx
       - ddclient
-      - postgresql-16
+      - postgresql-17
 
   tasks:
     - name: Install system packages (nginx, ddclient, postgresql)
@@ -79,7 +79,7 @@
         state: started
         enabled: yes
 
-    - name: Ensure PostgreSQL 16 is installed and running
+    - name: Ensure PostgreSQL 17 is installed and running
       ansible.builtin.service:
         name: postgresql
         state: started
