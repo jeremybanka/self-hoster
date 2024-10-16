@@ -4,9 +4,6 @@
   become: yes
   connection: local  # Ensure it runs on your local machine
   vars:
-    postgres_user: "{{ lookup('env', 'POSTGRES_USER') }}"
-    postgres_password: "{{ lookup('env', 'POSTGRES_PASSWORD') }}"
-    postgres_db_name: "{{ lookup('env', 'POSTGRES_DB') }}"
     global_packages:
       - "@antfu/ni"
     bun_bin_path: "{{ ansible_env.HOME }}/.bun/bin"
@@ -87,20 +84,6 @@
         name: postgresql
         state: started
         enabled: yes
-
-    - name: Create a PostgreSQL user
-      become_user: postgres
-      ansible.builtin.postgresql_user:
-        name: "{{ postgres_user }}"
-        password: "{{ postgres_password }}"
-        state: present
-
-    - name: Create a PostgreSQL database
-      become_user: postgres
-      ansible.builtin.postgresql_db:
-        name: "{{ postgres_db_name }}"
-        owner: "{{ postgres_user }}"
-        state: present
 
     - name: Set Node.js version with fnm if .nvmrc is present
       ansible.builtin.shell: |
