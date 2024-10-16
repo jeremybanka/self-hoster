@@ -13,7 +13,7 @@
     system_packages:
       - nginx
       - ddclient
-      - postgresql-17
+      - postgresql-16
 
   tasks:
     - name: Install system packages (nginx, ddclient, postgresql)
@@ -80,7 +80,7 @@
         state: started
         enabled: yes
 
-    - name: Ensure PostgreSQL 17 is installed and running
+    - name: Ensure PostgreSQL 16 is installed and running
       ansible.builtin.service:
         name: postgresql
         state: started
