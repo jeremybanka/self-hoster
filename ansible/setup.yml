@@ -91,7 +91,7 @@
           fnm use
         fi
       args:
-        chdir: "{{ ansible_env.HOME }}/path_to_your_project"
+        chdir: "{{ ansible_env.HOME }}/self-hoster"
 
     - name: Add required Node.js global packages with bun
       ansible.builtin.shell: |
