@@ -1,7 +1,8 @@
 ---
 - name: Setup for self-hosting a TypeScript application
-  hosts: all
+  hosts: localhost  # Target localhost explicitly
   become: yes
+  connection: local  # Ensure it runs on your local machine
   vars:
     postgres_user: "{{ lookup('env', 'POSTGRES_USER') }}"
     postgres_password: "{{ lookup('env', 'POSTGRES_PASSWORD') }}"
