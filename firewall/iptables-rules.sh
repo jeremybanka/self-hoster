@@ -3,6 +3,7 @@ iptables -A INPUT -i eth0 -m limit --limit 8/min -m conntrack --ctstate NEW -j L
 
 iptables -A INPUT -p tcp -m multiport --dports 80,443,53 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
 iptables -A OUTPUT -p tcp -m multiport --sports 80,443,53 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -p tcp -m multiport --dports 80,443,53 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
 iptables -A INPUT -p udp --dport 53 -j ACCEPT
 iptables -A OUTPUT -p udp --sport 53 -j ACCEPT
 iptables -A OUTPUT -p udp --dport 53 -j ACCEPT
