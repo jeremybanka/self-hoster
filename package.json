@@ -2,7 +2,7 @@
 	"name": "self-hoster",
 	"type": "module",
 	"scripts": {
-		"start": "flightdeck",
+		"start": "dotenv flightdeck",
 		"test": "./flightdeck.test-update.node.ts"
 	},
 	"devDependencies": {
