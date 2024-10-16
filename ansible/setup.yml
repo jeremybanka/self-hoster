@@ -1,6 +1,6 @@
 ---
 - name: Setup for self-hosting a TypeScript application
-  hosts: all
+  hosts: localhost
   become: yes
   vars:
     postgres_user: "{{ lookup('env', 'POSTGRES_USER') }}"
