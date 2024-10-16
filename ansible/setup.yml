@@ -67,6 +67,8 @@
     - name: Source updated shell profile
       ansible.builtin.shell: |
         source {{ ansible_env.HOME }}/.bashrc
+      args:
+        executable: /bin/bash
 
     - name: Ensure nginx is started and enabled
       ansible.builtin.service:
