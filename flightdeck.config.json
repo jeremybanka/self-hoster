@@ -8,6 +8,6 @@
 	"flightdeckRootDir": "./services",
 	"scripts": {
 		"download": "echo '2024 TEMPEST GAMES'",
-		"install": "nu tempest.games --latest"
+		"install": "nu tempest.games --latest && na setup-db"
 	}
 }
