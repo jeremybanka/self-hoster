@@ -6,7 +6,7 @@
 		"test": "./flightdeck.test-update.node.ts"
 	},
 	"devDependencies": {
-		"@types/node": "22.7.5",
+		"@types/node": "22.7.6",
 		"bun-types": "1.1.30",
 		"dotenv-cli": "7.4.2",
 		"flightdeck": "0.0.12",
