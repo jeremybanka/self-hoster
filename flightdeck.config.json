@@ -1,6 +1,6 @@
 {
 	"packageName": "tempest.games",
-	"secret": "secret",
+	"port": 5555,
 	"services": {
 		"frontend": { "run": "na frontend", "waitFor": false },
 		"backend": { "run": "na backend", "waitFor": true }
