@@ -1,3 +1,5 @@
+#!/bin/bash
+
 iptables -A INPUT -m conntrack --ctstate INVALID -j LOG --log-prefix "dropped packet (invalid): "
 iptables -A INPUT -i eth0 -m limit --limit 8/min -m conntrack --ctstate NEW -j LOG --log-prefix "new connection: "
 
