@@ -33,11 +33,11 @@ jobs:
 
       - name: Run Client Tests
         run: |
-          docker-compose exec -T client bash /tests/client/client-test.sh
+          docker-compose exec -T client bash /client-test.sh
 
       - name: Run Server Tests
         run: |
-          docker-compose exec -T server bash /tests/server/server-test.sh
+          docker-compose exec -T server bash /server-test.sh
 
       - name: Tear down Docker Compose
         if: always()
