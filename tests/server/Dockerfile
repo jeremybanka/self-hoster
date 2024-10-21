@@ -1,0 +1,18 @@
+FROM ubuntu:latest
+
+# Install necessary packages for the server
+RUN apt-get update && apt-get install -y \
+    git \
+    curl \
+    iptables \
+    openssh-server \
+    && rm -rf /var/lib/apt/lists/*
+
+# Add script to container
+COPY iptables-rules.sh /iptables-rules.sh
+
+# Make the script executable
+RUN chmod +x /iptables-rules.sh
+
+# Set default command to run the firewall script and keep the container running
+CMD ["/bin/bash", "-c", "/iptables-rules.sh && tail -f /dev/null"]

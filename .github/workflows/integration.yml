@@ -29,13 +29,11 @@ jobs:
 
       - name: Run Client Tests
         run: |
-          docker-compose exec client bash -c "apt-get update && apt-get install -y ssh curl"
-          docker-compose exec client bash /tests/client-test.sh
+          docker-compose exec -T client bash /tests/client/client-test.sh
 
       - name: Run Server Tests
         run: |
-          docker-compose exec server bash -c "apt-get update && apt-get install -y git curl"
-          docker-compose exec server bash /tests/server-test.sh
+          docker-compose exec -T server bash /tests/server/server-test.sh
 
       - name: Tear down Docker Compose
         if: always()

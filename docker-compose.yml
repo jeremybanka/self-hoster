@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   server:
-    image: ubuntu:latest
+    build: ./tests/server
     cap_add:
       - NET_ADMIN  # Allows modification of network settings like iptables
     volumes:
@@ -11,7 +11,7 @@ services:
     command: sh -c "/iptables-rules.sh && tail -f /dev/null"
 
   client:
-    image: ubuntu:latest
+    build: ./tests/client
     depends_on:
       - server
     networks:
