@@ -7,7 +7,7 @@
 		"setup": "dotenv setup-db"
 	},
 	"devDependencies": {
-		"@types/node": "22.8.2",
+		"@types/node": "22.8.4",
 		"bun-types": "1.1.33",
 		"dotenv-cli": "7.4.2",
 		"drizzle-kit": "0.26.2",
