@@ -8,6 +8,7 @@ on:
 
 jobs:
   firewall-test:
+    timeout-minutes: 5
     name: Firewall
     runs-on: ubuntu-latest
     steps:
