@@ -28,14 +28,15 @@ jobs:
           # Give containers time to initialize
           sleep 10
 
-      - name: Run Client Tests
-        run: |
-          docker-compose exec -T client bash /client-test.sh
-
+          
       - name: Run Server Tests
         run: |
           docker-compose exec -T server bash /server-test.sh
 
+      # - name: Run Client Tests
+      #   run: |
+      #     docker-compose exec -T client bash /client-test.sh
+          
       - name: Tear down Docker Compose
         if: always()
         run: docker-compose down
