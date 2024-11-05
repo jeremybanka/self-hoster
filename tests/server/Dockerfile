@@ -3,7 +3,7 @@ FROM ubuntu:latest
 # Install necessary packages for the server
 RUN apt-get update && apt-get install -y \
     git \
-    ping \
+    iputils-ping \
     curl \
     iptables \
     openssh-server \
