@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ping api.openai.com
+ping -c 3 api.openai.com
 
 curl -s https://api.openai.com/v1/models
 
