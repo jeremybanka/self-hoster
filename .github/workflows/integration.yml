@@ -25,9 +25,9 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y docker-compose
       
-      - name: Copy iptables-rules.sh to server
-        run: |
-          cp ./iptables-rules.sh ./tests/server/iptables-rules.sh
+      # - name: Copy iptables-rules.sh to tests
+      #   run: |
+      #     cp ./iptables-rules.sh ./tests/iptables-rules.sh
 
       - name: Build and run Docker Compose
         run: |
