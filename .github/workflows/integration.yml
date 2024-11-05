@@ -24,7 +24,7 @@ jobs:
 
       - name: Build and run Docker Compose
         run: |
-          docker-compose up -d
+          docker-compose up -d -f ./tests/docker-compose.yml
           # Give containers time to initialize
           sleep 10
 
