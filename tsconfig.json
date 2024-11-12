@@ -3,6 +3,6 @@
 		"module": "Preserve",
 		"noEmit": true,
 		"target": "ESNext",
-		"types": ["bun", "node"]
+		"types": ["bun-types", "node"]
 	}
 }
