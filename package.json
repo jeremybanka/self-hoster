@@ -8,7 +8,7 @@
 	},
 	"devDependencies": {
 		"@types/node": "22.9.1",
-		"bun-types": "1.1.34",
+		"bun-types": "1.1.35",
 		"dotenv-cli": "7.4.3",
 		"drizzle-kit": "0.28.1",
 		"flightdeck": "0.2.2",
