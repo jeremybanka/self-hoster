@@ -6,7 +6,6 @@ apt install -y \
   certbot \
   curl \
   ddclient \
-  fnm \
   git \
   iptables \
   iptables-persistent \
