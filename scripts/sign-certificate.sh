@@ -1,3 +1,5 @@
 #!/bin/bash
 
-sudo certbot --nginx -d tempest.games -d realtime.tempest.games -d flightdeck.tempest.games
+sudo certbot --nginx -d tempest.games
+sudo certbot --nginx -d realtime.tempest.games
+sudo certbot --nginx -d flightdeck.tempest.games
