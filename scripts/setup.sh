@@ -1,11 +1,18 @@
 #!/bin/bash
 
-apt update
+apt update && apt upgrade -y
 
-apt install -y ddclient
-apt install -y fnm
-apt install -y nginx
-apt install -y postgresql-17
+apt install -y \
+  certbot \
+  ddclient \
+  fnm \
+  iptables \
+  iptables-persistent \
+  nginx \
+  openssh-server \
+  postgresql-17 \
+  python3-certbot-nginx \
+  snort
 
 curl -fsSL https://bun.sh/install
 
