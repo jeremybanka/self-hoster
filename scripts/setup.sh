@@ -10,8 +10,7 @@ apt install -y \
   nginx \
   openssh-server \
   postgresql \
-  python3-certbot-nginx \
-  snort
+  python3-certbot-nginx 
 
 curl -fsSL https://fnm.vercel.app/install | bash -s -- --install-dir "./.fnm" --skip-shell
 curl -fsSL https://bun.sh/install
