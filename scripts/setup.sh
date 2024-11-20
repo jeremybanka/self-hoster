@@ -5,14 +5,15 @@ apt update && apt upgrade -y
 apt install -y \
   certbot \
   ddclient \
+  fnm \
   iptables \
   iptables-persistent \
   nginx \
   openssh-server \
   postgresql \
-  python3-certbot-nginx 
+  python3-certbot-nginx \
+  snort
 
-curl -fsSL https://fnm.vercel.app/install | bash -s -- --install-dir "./.fnm" --skip-shell
 curl -fsSL https://bun.sh/install
 
 eval "$(fnm env)"
