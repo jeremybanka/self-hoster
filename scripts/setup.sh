@@ -6,13 +6,15 @@ apt install -y \
   certbot \
   ddclient \
   fnm \
+  git \
   iptables \
   iptables-persistent \
   nginx \
   openssh-server \
   postgresql \
   python3-certbot-nginx \
-  snort
+  snort \
+  zsh
 
 curl -fsSL https://bun.sh/install
 
