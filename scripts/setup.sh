@@ -1,4 +1,4 @@
 #!/bin/bash
 
-./setup/apt-install.sh
-./setup/javascript-environment.sh
+./applications/apt-install.sh
+./applications/javascript-environment.sh
