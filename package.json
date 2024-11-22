@@ -12,7 +12,7 @@
 		"dotenv-cli": "7.4.4",
 		"drizzle-kit": "0.28.1",
 		"flightdeck": "0.2.3",
-		"typescript": "5.6.3"
+		"typescript": "5.7.2"
 	},
 	"dependencies": {
 		"tempest.games": "^0.1.13"
