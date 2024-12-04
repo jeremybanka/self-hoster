@@ -1,0 +1,20 @@
+FROM ubuntu:latest
+
+# Install necessary packages for the server
+RUN apt update && apt install -y \
+    curl \
+    git \
+    iptables \
+    iputils-ping \
+    openssh-server
+
+COPY ./server-start-up.sh /server-start-up.sh
+RUN chmod +x /server-start-up.sh
+
+COPY ../iptables-rules.sh /iptables-rules.sh
+RUN chmod +x /iptables-rules.sh
+
+COPY server-test.sh /server-test.sh
+RUN chmod +x /server-test.sh
+
+CMD ["/server-start-up.sh"]
