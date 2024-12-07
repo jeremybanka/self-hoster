@@ -11,7 +11,7 @@
 		"bun-types": "1.1.38",
 		"dotenv-cli": "7.4.4",
 		"drizzle-kit": "0.29.1",
-		"flightdeck": "0.2.3",
+		"flightdeck": "0.2.4",
 		"typescript": "5.7.2"
 	},
 	"dependencies": {
