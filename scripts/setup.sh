@@ -14,5 +14,9 @@ echo "🔧 setup.sh: source ~/.zshrc"
 source ~/.zshrc
 echo "🔧 setup.sh: installing global node_modules"
 ./scripts/deps/globals.bun.ts
+echo "❓ what's in ~/.bun"
+ls -la ~/.bun
+echo "❓ what's in ~/.bun/bin"
+ls -la ~/.bun/bin
 echo "🔧 setup.sh: installing local node_modules"
 ni
