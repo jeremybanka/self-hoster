@@ -24,7 +24,17 @@ jobs:
 
       - run: scripts/cfg/stow-adopt-stash.sh
 
-      - run: scripts/deps/globals.bun.ts
+      # - run: scripts/deps/globals.bun.ts
+      #   shell: zsh {0}
+      - run: |
+          ls -a ~
+          echo "CURRENT SHELL CONFIG .zshrc"
+          cat ~/.zshrc
+          source ~/.zshrc 
+          which bun
+          bun --version
+          bun ./scripts/dependencies/globals.bun.ts
+          ./scripts/dependencies/globals.bun.ts
         shell: zsh {0}
 
       - run: ni
