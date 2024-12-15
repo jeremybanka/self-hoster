@@ -16,8 +16,7 @@
     fi
   
   # global node_modules <- bun
-  # bun completions
-  [ -s "/root/.bun/_bun" ] && source "/root/.bun/_bun"
-  # bun
-  PATH="$PATH:$HOME/.bun/bin"
-
+    # bun
+    PATH=$PATH:$HOME/.bun/bin
+    # bun completions
+    [ -s "/root/.bun/_bun" ] && source "/root/.bun/_bun"
