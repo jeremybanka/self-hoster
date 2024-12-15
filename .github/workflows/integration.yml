@@ -29,7 +29,7 @@ jobs:
       
       - shell: zsh {0}
         run: |
-          ls ~
+          ls -a ~
           echo "CURRENT SHELL CONFIG .zshrc"
           cat ~/.zshrc
           source ~/.zshrc 
