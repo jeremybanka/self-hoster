@@ -14,9 +14,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install Dependencies
+      - name: Install Apt Deps
         run: |
-          sudo ./scripts/dependencies/apt-install.sh
+          sudo ./scripts/dependencies/install-apt-deps.sh
+    
+      - name: Install Omz
+        run: |
+          sudo ./scripts/dependencies/install-omz.sh
+
+      - name: Install Fast Node Manager
+        run: |
+          sudo ./scripts/dependencies/install-fnm.sh
+
+      - name: Install Bun
+        run: |
+          sudo ./scripts/dependencies/install-bun.sh
 
       - name: Apply Configurations
         run: |
