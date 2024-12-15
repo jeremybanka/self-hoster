@@ -8,7 +8,7 @@
 # languages ####################################################################
 
   # node <- schniz/fnm 
-    FNM_PATH=/root/.local/share/fnm
+    FNM_PATH=$HOME/.local/share/fnm
     if [ -d "$FNM_PATH" ]; then
       PATH=$PATH:$FNM_PATH
       eval "`fnm env`"
