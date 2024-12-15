@@ -24,12 +24,12 @@ jobs:
 
       - run: scripts/cfg/stow-adopt-stash.sh
 
-      - run: |
-          which bun
-          bun --version
-          bun ./scripts/deps/globals.bun.ts
-          ./scripts/deps/globals.bun.ts
-        shell: zsh {0}
+      # - run: |
+      #     which bun
+      #     bun --version
+      #     bun ./scripts/deps/globals.bun.ts
+      #     ./scripts/deps/globals.bun.ts
+      - run: scripts/deps/globals.bun.ts
 
       - run: ni
         shell: zsh {0}
