@@ -1,4 +1,7 @@
 #!/bin/bash
 
-./applications/apt-install.sh
-./applications/javascript-environment.sh
+apt update && apt upgrade -y
+
+./dependencies/shell.sh
+./dependencies/apt-install.sh
+./dependencies/javascript-environment.sh
