@@ -14,10 +14,25 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install Dependencies
-        run: |
-          sudo ./scripts/dependencies/apt-install.sh
+      - name: Use Zsh
+        run: sudo apt install zsh && sudo chsh -s $(which zsh)
 
-      - name: Apply Configurations
+      - shell: zsh {0}
+        run: |
+          sudo ./scripts/dependencies/install-omz.sh
+
+      - shell: zsh {0}
+        run: |
+          sudo ./scripts/dependencies/install-fnm.sh
+
+      - shell: zsh {0}
+        run: |
+          sudo ./scripts/dependencies/install-bun.sh
+          
+      - shell: zsh {0}
+        run: |
+          sudo ./scripts/dependencies/install-apt-deps.sh
+
+      - shell: zsh {0}
         run: |
           sudo ./scripts/config/stow-overlay.sh

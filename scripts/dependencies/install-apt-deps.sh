@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 apt install -y \
   certbot \
