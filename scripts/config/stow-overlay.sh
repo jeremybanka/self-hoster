@@ -1,4 +1,4 @@
-#!bin/zsh
+#!/bin/zsh
 
 # shellcheck disable=SC2016
 stow --adopt -t / critter
