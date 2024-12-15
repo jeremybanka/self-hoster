@@ -11,11 +11,14 @@ jobs:
     name: Setup 
     runs-on: ubuntu-latest
     steps:
+      - name: Get Zsh
+        run: sudo apt install zsh
+        
+      # - name: Use Zsh
+      #   run: sudo chsh -s $(which zsh)
+
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Use Zsh
-        run: sudo apt install zsh && sudo chsh -s $(which zsh)
 
       - run: ./scripts/dependencies/install-omz.sh
 
@@ -27,14 +30,7 @@ jobs:
       
       - run: ./scripts/config/stow-overlay.sh
       
-      - shell: zsh {0}
-        run: |
-          ls -a ~
-          echo "CURRENT SHELL CONFIG .zshrc"
-          cat ~/.zshrc
-          source ~/.zshrc 
-          which bun
-          bun --version
-          bun ./scripts/dependencies/globals.bun.ts
-          ./scripts/dependencies/globals.bun.ts
+      - run: ./scripts/dependencies/globals.bun.ts
+        shell: zsh {0}
+        
       
