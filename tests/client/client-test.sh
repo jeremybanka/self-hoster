@@ -1,4 +1,4 @@
-#!bin/zsh
+##!/bin/zsh
 
 SERVER_IP=server  # Docker Compose sets this in the network
 
