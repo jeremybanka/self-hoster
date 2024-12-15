@@ -7,8 +7,7 @@ source ~/.zshrc
 echo "Upgrading Bun..."
 bun upgrade
 echo "Installing global packages..."
-global_packages="@antfu/ni diff-so-fancy"
-for pkg in $global_packages; do
+for pkg in @antfu/ni diff-so-fancy; do
     bun install -g $pkg
 done
 echo "Adding ~/.bun/bin to PATH..."
