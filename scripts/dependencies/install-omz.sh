@@ -10,6 +10,6 @@ sudo chown root:root /usr/share/zsh/vendor-completions
 
 source ~/.zshrc
 
-cat .zshrc
+cat ~/.zshrc
 
 zplug "so-fancy/diff-so-fancy", as:command, use:bin/git-dsf
