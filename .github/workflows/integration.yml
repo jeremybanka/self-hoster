@@ -20,18 +20,18 @@ jobs:
         run: |
           sudo ./scripts/dependencies/install-omz.sh
 
-      - name: Install Fast Node Manager
+      - shell: zsh {0}
         run: |
           sudo ./scripts/dependencies/install-fnm.sh
 
-      - name: Install Bun
+      - shell: zsh {0}
         run: |
           sudo ./scripts/dependencies/install-bun.sh
           
-      - name: Install Apt Deps
+      - shell: zsh {0}
         run: |
           sudo ./scripts/dependencies/install-apt-deps.sh
 
-      - name: Apply Configurations
+      - shell: zsh {0}
         run: |
           sudo ./scripts/config/stow-overlay.sh
