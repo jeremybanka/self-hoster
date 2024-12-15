@@ -1,3 +1,5 @@
 #!/bin/zsh
 
-sudo curl -fsSL https://fnm.vercel.app/install | zsh
+curl -fsSL https://fnm.vercel.app/install | zsh
+
+echo "Done!"
