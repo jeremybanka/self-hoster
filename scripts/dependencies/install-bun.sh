@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/bin/zsh
 
-curl -fsSL https://bun.sh/install | bash
+curl -fsSL https://bun.sh/install | zsh
 bun upgrade
 global_packages="@antfu/ni"
 for pkg in $global_packages; do
