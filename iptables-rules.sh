@@ -1,4 +1,4 @@
-##!/bin/zsh
+#!/bin/zsh
 
 # log invalid packets
 iptables -A INPUT -m conntrack --ctstate INVALID -j LOG --log-prefix "iptables dropped packet (invalid): "

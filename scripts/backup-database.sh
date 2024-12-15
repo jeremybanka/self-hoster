@@ -1,4 +1,4 @@
-##!/bin/zsh
+#!/bin/zsh
 
 # Variables
 DB_NAME="tempest"
