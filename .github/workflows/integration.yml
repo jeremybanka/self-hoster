@@ -17,3 +17,7 @@ jobs:
       - name: Install Dependencies
         run: |
           sudo ./scripts/dependencies/apt-install.sh
+
+      - name: Apply Configurations
+        run: |
+          sudo ./scripts/stow-overlay.sh
