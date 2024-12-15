@@ -17,11 +17,11 @@ jobs:
       - name: Use Zsh
         run: sudo apt install zsh && sudo chsh -s $(which zsh)
 
-      - run: sudo ./scripts/dependencies/install-omz.sh
+      - run: ./scripts/dependencies/install-omz.sh
 
-      - run: sudo ./scripts/dependencies/install-fnm.sh
+      - run: ./scripts/dependencies/install-fnm.sh
 
-      - run: sudo ./scripts/dependencies/install-bun.sh
+      - run: ./scripts/dependencies/install-bun.sh
 
       - run: sudo ./scripts/dependencies/install-apt-deps.sh
       
