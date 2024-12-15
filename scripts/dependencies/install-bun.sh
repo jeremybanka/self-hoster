@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 echo "Installing Bun..."
-curl -fsSL https://bun.sh/install | zsh
+curl -fsSL https://bun.sh/install | bash
 echo "Source ~/.zshrc..."
 source ~/.zshrc
 echo "Upgrading Bun..."
