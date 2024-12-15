@@ -1,7 +1,7 @@
 #!/bin/zsh
 
-sudo stow --adopt -t / critter
 stow --adopt -t ~ home
+sudo stow --adopt -t / critter
 
 git status
 git stash
