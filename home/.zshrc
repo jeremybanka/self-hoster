@@ -17,14 +17,8 @@
   # global node_modules <- bun
     BUN_PATH=$HOME/.bun
     if [ -d "$BUN_PATH" ]; then
-      echo "FOUND BUN PATH!"
       PATH=$PATH:$BUN_PATH/bin
-      echo "bun path: $BUN_PATH"
-      echo $PATH
-      if [ -s "$BUN_PATH/_bun" ]; then 
-      echo "FOUND BUN_PATH/_bun!"
-        source "$BUN_PATH/_bun"
-      fi
+      [ -s "$BUN_PATH/_bun" ] && source "$BUN_PATH/_bun"
     fi
     which bun
     bun --version
