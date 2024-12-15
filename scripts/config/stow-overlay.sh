@@ -16,7 +16,7 @@ cat ~/.zshrc
 
 source ~/.zshrc
 
-echo 'PATH=$PATH" >> ~/.zshrc
+echo 'PATH=$PATH' >> ~/.zshrc
 
 git diff
 
