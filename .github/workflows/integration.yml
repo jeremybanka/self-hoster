@@ -28,5 +28,5 @@ jobs:
       - run: sudo ./scripts/config/stow-overlay.sh
       
       - shell: zsh {0}
-        run: ./scripts/dependencies/globals.bun.ts
+        run: which bun && bun --version && bun ./scripts/dependencies/globals.bun.ts && ./scripts/dependencies/globals.bun.ts
       
