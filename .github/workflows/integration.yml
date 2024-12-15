@@ -27,14 +27,14 @@ jobs:
       # - run: scripts/deps/globals.bun.ts
       #   shell: zsh {0}
       - run: |
-          ls -a ~
+          ls -a ~/.bun
           echo "CURRENT SHELL CONFIG .zshrc"
           cat ~/.zshrc
           source ~/.zshrc 
           which bun
           bun --version
-          bun ./scripts/dependencies/globals.bun.ts
-          ./scripts/dependencies/globals.bun.ts
+          bun scripts/deps/globals.bun.ts
+          ./scripts/deps/globals.bun.ts
         shell: zsh {0}
 
       - run: ni
