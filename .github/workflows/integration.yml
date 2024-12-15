@@ -20,4 +20,4 @@ jobs:
 
       - name: Apply Configurations
         run: |
-          sudo ./scripts/stow-overlay.sh
+          sudo ./scripts/config/stow-overlay.sh
