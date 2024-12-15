@@ -1,5 +1,4 @@
 #!/bin/zsh
 
-SHELL=zsh curl -fsSL https://bun.sh/install | bash
-#  ~/.bun/bin/bun completions
+curl -fsSL https://bun.sh/install | SHELL=zsh bash
 ls -la ~/.bun
