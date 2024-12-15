@@ -7,8 +7,3 @@ git status
 sudo git stash
 
 source ~/.zshrc
-
-cat ~/.zshrc
-
-which bun
-bun --version
