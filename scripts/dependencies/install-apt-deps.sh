@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-apt install -y \
+sudo apt install -y \
   certbot \
   curl \
   ddclient \
@@ -17,4 +17,4 @@ apt install -y \
   zsh
 
 /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh -y
-apt install -y postgresql-17
+sudo apt install -y postgresql-17
