@@ -30,13 +30,23 @@ jobs:
       #     bun ./scripts/deps/globals.bun.ts
       #     ./scripts/deps/globals.bun.ts
       - run: |
+          echo "SHELL:"
+          echo $SHELL
+          echo "PATH:"
+          echo $PATH
           source ~/.zshrc
+          echo $PATH
           which bun
           ./scripts/deps/globals.bun.ts
         shell: zsh {0}
       
 
-      - run: ni
+      - run: | 
+          echo "SHELL:"
+          echo $SHELL
+          echo "PATH:"
+          echo $PATH
+          ni
         shell: zsh {0}
       - run: timeout 10s nr start
         shell: zsh {0}
