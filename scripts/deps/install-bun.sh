@@ -1,4 +1,5 @@
 #!/bin/zsh
 
 curl -fsSL https://bun.sh/install | bash
-SHELL=/bin/zsh ~/.bun/bin/bun completions
+export SHELL=/bin/zsh
+eval "$(~/.bun/bin/bun completions)"
