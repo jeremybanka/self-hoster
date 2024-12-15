@@ -10,6 +10,8 @@ echo "🔧 setup.sh: installing apt"
 ./scripts/deps/apt-install.sh
 echo "🔧 setup.sh: applying configurations"
 ./scripts/cfg/stow-adopt-stash.sh
+echo "🔧 setup.sh: source ~/.zshrc"
+source ~/.zshrc
 echo "🔧 setup.sh: installing global node_modules"
 ./scripts/deps/globals.bun.ts
 echo "🔧 setup.sh: installing local node_modules"

@@ -5,5 +5,3 @@ sudo stow --adopt -t / critter
 
 git status
 sudo git stash
-
-source ~/.zshrc
