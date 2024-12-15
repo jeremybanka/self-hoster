@@ -2,4 +2,4 @@
 
 curl -fsSL https://bun.sh/install | SHELL=zsh bash
 source ~/.zshrc
-bun i -g
+bun i -g @antfu/ni
