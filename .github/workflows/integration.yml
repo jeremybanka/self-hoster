@@ -20,5 +20,7 @@ jobs:
       - run: ./scripts/setup.sh
 
       - name: Start
-        run: timeout 10s nr start
+        run: |
+          source ~/.zshrc
+          timeout 10s nr start
         shell: zsh {0}
