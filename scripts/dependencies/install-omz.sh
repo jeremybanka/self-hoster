@@ -2,9 +2,9 @@
 
 curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | zsh
 
-chmod g-w,o-w /usr/share/zsh
-chmod g-w,o-w /usr/share/zsh/vendor-completions
-chown root:root /usr/share/zsh
-chown root:root /usr/share/zsh/vendor-completions
+sudo chmod g-w,o-w /usr/share/zsh
+sudo chmod g-w,o-w /usr/share/zsh/vendor-completions
+sudo chown root:root /usr/share/zsh
+sudo chown root:root /usr/share/zsh/vendor-completions
 
 source ~/.zshrc

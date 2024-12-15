@@ -23,9 +23,9 @@ jobs:
 
       - run: ./scripts/dependencies/install-bun.sh
 
-      - run: sudo ./scripts/dependencies/install-apt-deps.sh
+      - run: ./scripts/dependencies/install-apt-deps.sh
       
-      - run: sudo ./scripts/config/stow-overlay.sh
+      - run: ./scripts/config/stow-overlay.sh
       
       - shell: zsh {0}
         run: |
