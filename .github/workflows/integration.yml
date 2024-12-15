@@ -18,21 +18,17 @@ jobs:
         uses: actions/checkout@v4
 
       - run: scripts/deps/install-omz.sh
-
       - run: scripts/deps/install-fnm.sh
-
       - run: scripts/deps/install-bun.sh
-
       - run: scripts/deps/apt-install.sh
-      
-      - run: scripts/cfg/stow-overlay.sh
-      
+
+      - run: scripts/cfg/stow-adopt-stash.sh
+
       - run: scripts/deps/globals.bun.ts
         shell: zsh {0}
-        
+
       - run: ni
         shell: zsh {0}
-
       - run: timeout 10s nr start
         shell: zsh {0}
 
