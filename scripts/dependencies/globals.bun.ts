@@ -1,4 +1,4 @@
-#! bun
+#!/bin/env bun
 
 import { $ } from "bun"
 import { existsSync, lstatSync } from "node:fs"
