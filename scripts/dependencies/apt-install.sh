@@ -1,7 +1,5 @@
 #!/bin/bash
 
-apt update && apt upgrade -y
-
 apt install -y \
   certbot \
   curl \
@@ -11,12 +9,12 @@ apt install -y \
   iptables-persistent \
   nginx \
   openssh-server \
+  postgresql-common \
   python3-certbot-nginx \
   snort \
   stow \
   vim \
   zsh
 
-apt install -y postgresql-common
-/usr/share/postgresql-common/pgdg/apt.postgresql.org.sh
+/usr/share/postgresql-common/pgdg/apt.postgresql.org.sh -y
 apt install -y postgresql-17
