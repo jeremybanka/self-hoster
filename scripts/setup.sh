@@ -15,7 +15,7 @@ ls -laL ~/.bun/install/global/package.json
 echo "🔧 setup.sh: source ~/.zshrc"
 source ~/.zshrc
 echo "🔧 setup.sh: installing global node_modules"
-./scripts/deps/globals.bun.ts
+sudo ./scripts/deps/globals.bun.ts
 echo "❓ what's in ~/.bun"
 ls -la ~/.bun
 echo "❓ what's in ~/.bun/bin"
