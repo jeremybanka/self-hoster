@@ -7,4 +7,5 @@ git status
 git diff
 git stash
 
-g s
+cat ~/.zshrc
+cat ~/.gitconfig
