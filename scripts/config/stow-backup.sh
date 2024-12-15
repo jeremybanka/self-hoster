@@ -1,4 +1,5 @@
 #!/bin/bash
+
 backup_dir="$HOME/stow-backups/$(date +%Y-%m-%d_%H-%M-%S)"
 mkdir -p "$backup_dir"
 
