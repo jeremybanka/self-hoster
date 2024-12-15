@@ -5,10 +5,14 @@ stow --adopt -t ~ home
 
 git status
 # git diff
+
+echo "CREATED .zshrc"
+cat ~/.zshrc
+
 git stash
 
+echo "REPO .zshrc"
 cat ~/.zshrc
-cat ~/.gitconfig
 
 source ~/.zshrc
 
