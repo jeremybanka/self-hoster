@@ -1,7 +1,5 @@
 #!/bin/zsh
 
-set -eo pipefail
-
 apt install -y \
   certbot \
   curl \
