@@ -23,8 +23,9 @@ jobs:
 
       - run: sudo ./scripts/dependencies/install-bun.sh
 
-      - run: ./scripts/dependencies/globals.bun.ts
-
       - run: sudo ./scripts/dependencies/install-apt-deps.sh
-
+      
       - run: sudo ./scripts/config/stow-overlay.sh
+      
+      - run: ./scripts/dependencies/globals.bun.ts
+      
