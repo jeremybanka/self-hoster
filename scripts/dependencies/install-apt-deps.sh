@@ -16,5 +16,5 @@ sudo apt install -y \
   vim \
   zsh
 
-/usr/share/postgresql-common/pgdg/apt.postgresql.org.sh -y
+sudo /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh -y
 sudo apt install -y postgresql-17
