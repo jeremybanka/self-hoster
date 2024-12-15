@@ -21,7 +21,7 @@ jobs:
       - run: scripts/deps/install-fnm.sh
       - run: scripts/deps/install-bun.sh
       - run: scripts/deps/apt-install.sh
-        
+
       - run: scripts/cfg/stow-adopt-stash.sh
 
       - run: scripts/deps/globals.bun.ts
@@ -31,6 +31,3 @@ jobs:
         shell: zsh {0}
       - run: timeout 10s nr start
         shell: zsh {0}
-
-
-      
