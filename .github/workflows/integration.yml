@@ -14,7 +14,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - run: sudo apt install zsh
+      - name: Use Zsh
+        run: sudo apt install zsh && chsh -s $(which zsh)
 
       - shell: zsh {0}
         run: |
