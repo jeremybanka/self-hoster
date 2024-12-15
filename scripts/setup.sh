@@ -18,5 +18,9 @@ echo "❓ what's in ~/.bun"
 ls -la ~/.bun
 echo "❓ what's in ~/.bun/bin"
 ls -la ~/.bun/bin
+echo "❓ what's in ~/.bun/install"
+ls -la ~/.bun/install
+echo "❓ what's in ~/.bun/install/global"
+ls -la ~/.bun/install/global
 echo "🔧 setup.sh: installing local node_modules"
 ni
