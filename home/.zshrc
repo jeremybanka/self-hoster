@@ -18,5 +18,7 @@
     BUN_PATH=$HOME/.bun
     if [ -d "$BUN_PATH" ]; then
       PATH=$PATH:$BUN_PATH/bin
-      source $BUN_PATH/_bun
+      if [ -s "$BUN_PATH/_bun" ]; then 
+        source "$BUN_PATH/_bun"
+      fi
     fi
