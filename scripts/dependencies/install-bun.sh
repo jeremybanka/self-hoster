@@ -2,7 +2,7 @@
 
 curl -fsSL https://bun.sh/install | zsh
 bun upgrade
-global_packages="@antfu/ni"
+global_packages="@antfu/ni diff-so-fancy"
 for pkg in $global_packages; do
     bun install -g $pkg
 done
