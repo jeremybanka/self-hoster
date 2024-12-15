@@ -14,12 +14,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install Apt Deps
-        run: |
-          sudo ./scripts/dependencies/install-apt-deps.sh
-    
       - name: Install Omz
-        shell: zsh
         run: |
           sudo ./scripts/dependencies/install-omz.sh
 
@@ -30,6 +25,10 @@ jobs:
       - name: Install Bun
         run: |
           sudo ./scripts/dependencies/install-bun.sh
+          
+      - name: Install Apt Deps
+        run: |
+          sudo ./scripts/dependencies/install-apt-deps.sh
 
       - name: Apply Configurations
         run: |
