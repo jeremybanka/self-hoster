@@ -6,3 +6,5 @@ stow --adopt -t ~ home
 git status
 git diff
 git stash
+
+g s
