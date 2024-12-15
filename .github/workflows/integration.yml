@@ -14,8 +14,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install Omz
-        shell: zsh
+      - run: sudo apt install zsh
+
+      - shell: zsh {0}
         run: |
           sudo ./scripts/dependencies/install-omz.sh
 
