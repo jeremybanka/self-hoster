@@ -1,4 +1,4 @@
-#!bin/zsh
+#!/bin/zsh
 
 set -eo pipefail
 
@@ -18,5 +18,5 @@ apt install -y \
   vim \
   zsh
 
-/usr/share/postgresql-common/pgdg/apt.postgresql.org.sh -y
+zsh /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh -y
 apt install -y postgresql-17
