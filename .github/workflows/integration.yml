@@ -20,6 +20,7 @@ jobs:
       - run: scripts/deps/install-omz.sh
       - run: scripts/deps/install-fnm.sh
       - run: scripts/deps/install-bun.sh
+        shell: zsh {0}
       - run: scripts/deps/apt-install.sh
 
       - run: scripts/cfg/stow-adopt-stash.sh
