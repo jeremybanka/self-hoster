@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+set -eo pipefail
+
 curl -fsSL https://bun.sh/install | zsh
 bun upgrade
 global_packages="@antfu/ni diff-so-fancy"

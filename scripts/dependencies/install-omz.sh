@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+set -eo pipefail
+
 curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | zsh
 
 chmod g-w,o-w /usr/share/zsh
