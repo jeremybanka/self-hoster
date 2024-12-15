@@ -13,5 +13,8 @@
 	},
 	"[nginx]": {
 		"editor.defaultFormatter": "AaaaronZhou.nginx-config-formatter-vscode-extension"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	}
 }

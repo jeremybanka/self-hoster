@@ -17,22 +17,14 @@ jobs:
       - name: Use Zsh
         run: sudo apt install zsh && sudo chsh -s $(which zsh)
 
-      - shell: zsh {0}
-        run: |
-          sudo ./scripts/dependencies/install-omz.sh
+      - run: sudo ./scripts/dependencies/install-omz.sh
 
-      - shell: zsh {0}
-        run: |
-          sudo ./scripts/dependencies/install-fnm.sh
+      - run: sudo ./scripts/dependencies/install-fnm.sh
 
-      - shell: zsh {0}
-        run: |
-          sudo ./scripts/dependencies/install-bun.sh
-          
-      - shell: zsh {0}
-        run: |
-          sudo ./scripts/dependencies/install-apt-deps.sh
+      - run: sudo ./scripts/dependencies/install-bun.sh
 
-      - shell: zsh {0}
-        run: |
-          sudo ./scripts/config/stow-overlay.sh
+      - run: ./scripts/dependencies/globals.bun.ts
+
+      - run: sudo ./scripts/dependencies/install-apt-deps.sh
+
+      - run: sudo ./scripts/config/stow-overlay.sh
