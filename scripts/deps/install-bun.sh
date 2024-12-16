@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+echo "which bun: $(which bun)"
+
 BUN_ALREADY_INSTALLED=$(which bun)
 
 if [[ -z "$BUN_ALREADY_INSTALLED" ]]; then
