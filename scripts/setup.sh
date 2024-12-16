@@ -41,5 +41,7 @@ echo "❓ who owns the global package.json"
 ls -lal ~/.bun/install/global/package.json
 echo "---"
 ls -laL ~/.bun/install/global/package.json
+echo "❓ what's in the global package.json"
+cat ~/.bun/install/global/package.json
 echo "🔧 setup.sh: installing local node_modules"
 ni
