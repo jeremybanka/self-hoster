@@ -1,10 +1,18 @@
 #!/bin/zsh
 
-curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | zsh
+OMZ_ALREADY_INSTALLED=$(which omz)
 
-sudo chmod g-w,o-w /usr/share/zsh
-sudo chmod g-w,o-w /usr/share/zsh/vendor-completions
-sudo chown root:root /usr/share/zsh
-sudo chown root:root /usr/share/zsh/vendor-completions
+if [[ -z "$OMZ_ALREADY_INSTALLED" ]]; then
+  echo "🔧 install-omz.sh: installing omz"
+  curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | zsh
 
-source ~/.zshrc
+  sudo chmod g-w,o-w /usr/share/zsh
+  sudo chmod g-w,o-w /usr/share/zsh/vendor-completions
+  sudo chown root:root /usr/share/zsh
+  sudo chown root:root /usr/share/zsh/vendor-completions
+
+  source ~/.zshrc
+else
+  echo "🔧 install-omz.sh: omz already installed"
+  omz update
+fi
