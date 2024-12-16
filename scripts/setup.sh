@@ -24,6 +24,8 @@ echo "🔧 setup.sh: installing global node_modules"
 # bun install -gf
 NPM_GLOBALS=$(jq -r '.dependencies | to_entries | map("\(.key)@\(.value)") | join(" ")' ~/.bun/install/global/package.json)
 bun install --global $NPM_GLOBALS
+echo "🔧 setup.sh: restricting ownership of global package.json"
+sudo chmod 644 ./home/.bun/install/global/package.json
 echo "❓ what's in ~/.bun"
 ls -la ~/.bun
 echo "---"
