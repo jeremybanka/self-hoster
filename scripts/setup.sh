@@ -19,6 +19,7 @@ GROUP=$(id -gn $USER)
 echo "USER: $USER"
 echo "GROUP: $GROUP"
 sudo chown -R $USER:$GROUP ~/.bun/install/global/package.json
+chmod +w ~/.bun/install/global/package.json
 echo "🔧 setup.sh: installing global node_modules"
 bun install -gf
 echo "❓ what's in ~/.bun"
