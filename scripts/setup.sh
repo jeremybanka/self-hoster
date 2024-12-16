@@ -18,8 +18,8 @@ echo "🔧 setup.sh: modifying ownership of global package.json"
 GROUP=$(id -gn $USER)
 echo "USER: $USER"
 echo "GROUP: $GROUP"
-# sudo chown -R $USER:$GROUP ./home/.bun/install/global/package.json
-# sudo chmod +w ./home/.bun/install/global/package.json
+sudo chown -R $USER:$GROUP ./home/.bun/install/global/package.json
+sudo chmod 666 ./home/.bun/install/global/package.json
 echo "🔧 setup.sh: installing global node_modules"
 # bun install -gf
 NPM_GLOBALS=$(jq -r '.dependencies | to_entries | map("\(.key)@\(.value)") | join(" ")' ~/.bun/install/global/package.json)
