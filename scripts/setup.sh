@@ -43,5 +43,8 @@ echo "---"
 ls -laL ~/.bun/install/global/package.json
 echo "❓ what's in the global package.json"
 cat ~/.bun/install/global/package.json
+echo "❓ did the binaries perhaps get relative-placed?"
+ls -la ./home/.bun
+ls -la ./home/.bun/bin
 echo "🔧 setup.sh: installing local node_modules"
 ni
