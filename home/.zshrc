@@ -20,5 +20,3 @@
       PATH=$PATH:$BUN_PATH/bin
       [ -s "$BUN_PATH/_bun" ] && source "$BUN_PATH/_bun"
     fi
-    which bun
-    bun --version
