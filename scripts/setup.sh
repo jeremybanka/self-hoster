@@ -14,8 +14,13 @@ ls -laL ~/.bun/install/global/package.json
 ./scripts/cfg/stow-adopt-stash.sh
 echo "🔧 setup.sh: source ~/.zshrc"
 source ~/.zshrc
+echo "🔧 setup.sh: modifying ownership of global package.json"
+GROUP=$(id -gn $USER)
+echo "USER: $USER"
+echo "GROUP: $GROUP"
+sudo chown -R $USER:$GROUP ~/.bun/install/global/package.json
 echo "🔧 setup.sh: installing global node_modules"
-sudo ./scripts/deps/globals.bun.ts
+bun install --cwd ~/.bun/install/global
 echo "❓ what's in ~/.bun"
 ls -la ~/.bun
 echo "❓ what's in ~/.bun/bin"
