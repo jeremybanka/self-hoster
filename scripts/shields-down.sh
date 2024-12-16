@@ -1,4 +1,4 @@
-##!/bin/zsh
+#!/bin/zsh
 
 iptables -F
 iptables --policy INPUT ACCEPT

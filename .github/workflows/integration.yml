@@ -8,31 +8,19 @@ on:
 
 jobs:
   setup:
-    name: Setup 
+    name: Startup 
     runs-on: ubuntu-latest
     steps:
+      - name: Get Zsh
+        run: sudo apt install zsh
+
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Use Zsh
-        run: sudo apt install zsh && sudo chsh -s $(which zsh)
+      - run: ./scripts/setup.sh
 
-      - shell: zsh {0}
-        run: |
-          sudo ./scripts/dependencies/install-omz.sh
-
-      - shell: zsh {0}
-        run: |
-          sudo ./scripts/dependencies/install-fnm.sh
-
-      - shell: zsh {0}
-        run: |
-          sudo ./scripts/dependencies/install-bun.sh
-          
-      - shell: zsh {0}
-        run: |
-          sudo ./scripts/dependencies/install-apt-deps.sh
-
-      - shell: zsh {0}
-        run: |
-          sudo ./scripts/config/stow-overlay.sh
+      # - name: Start
+      #   run: |
+      #     source ~/.zshrc
+      #     timeout 1s nr start
+      #   shell: zsh {0}
