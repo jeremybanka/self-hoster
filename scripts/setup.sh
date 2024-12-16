@@ -3,16 +3,16 @@
 echo "🔧 setup.sh: source ~/.zshrc"
 source ~/.zshrc
 
-echo "🔧 setup.sh: installing omz"
+echo "🔧 setup.sh: ./scripts/deps/install-zsh.sh"
 ./scripts/deps/install-omz.sh
-echo "🔧 setup.sh: installing fnm"
+echo "🔧 setup.sh: ./scripts/deps/install-fnm.sh"
 ./scripts/deps/install-fnm.sh
-echo "🔧 setup.sh: installing bun"
+echo "🔧 setup.sh: ./scripts/deps/install-bun.sh"
 ./scripts/deps/install-bun.sh
-echo "🔧 setup.sh: installing apt"
+echo "🔧 setup.sh: ./scripts/deps/apt-install.sh"
 ./scripts/deps/apt-install.sh
 
-echo "🔧 setup.sh: applying configurations"
+echo "🔧 setup.sh: ./scripts/cfg/stow-adopt-stash.sh"
 ./scripts/cfg/stow-adopt-stash.sh
 
 echo "🔧 setup.sh: source ~/.zshrc"
