@@ -21,7 +21,9 @@ echo "GROUP: $GROUP"
 sudo chown -R $USER:$GROUP ~/.bun/install/global/package.json
 chmod +w ~/.bun/install/global/package.json
 echo "🔧 setup.sh: installing global node_modules"
-bun install -gf
+# bun install -gf
+NPM_GLOBALS=$(jq -r '.dependencies | to_entries | map("\(.key)@\(.value)") | join(" ")' ~/.bun/install/global/package.json)
+bun install --global $NPM_GLOBALS
 echo "❓ what's in ~/.bun"
 ls -la ~/.bun
 echo "---"
