@@ -20,8 +20,18 @@ jobs:
       - run: ./scripts/setup.sh
       - run: ./scripts/setup.sh
 
-      # - name: Start
-      #   run: |
-      #     source ~/.zshrc
-      #     timeout 1s nr start
-      #   shell: zsh {0}
+      - name: Start
+        run: |
+          source ~/.zshrc
+          cp .env.defaults .env
+          timeout 3s nr start > app-output.log 2>&1 || true
+          if ! grep -q "tempest.games::frontend: 💬 alive" app-output.log; then
+            echo "🚨 tempest.games::frontend did not start up in time"
+            exit 1
+          fi
+          if ! grep -q "tempest.games::backend: 💬 alive" app-output.log; then
+            echo "🚨 tempest.games::backend did not start up in time"
+            exit 1
+          fi
+
+        shell: zsh {0}
