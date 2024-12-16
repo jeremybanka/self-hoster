@@ -19,7 +19,7 @@ GROUP=$(id -gn $USER)
 echo "USER: $USER"
 echo "GROUP: $GROUP"
 sudo chown -R $USER:$GROUP ~/.bun/install/global/package.json
-chmod +w ~/.bun/install/global/package.json
+sudo chmod +w ~/.bun/install/global/package.json
 echo "🔧 setup.sh: installing global node_modules"
 # bun install -gf
 NPM_GLOBALS=$(jq -r '.dependencies | to_entries | map("\(.key)@\(.value)") | join(" ")' ~/.bun/install/global/package.json)
