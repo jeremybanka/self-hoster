@@ -1,8 +1,6 @@
 #!/bin/zsh
 
-echo "which bun: $(which bun)"
-
-BUN_ALREADY_INSTALLED=$(which bun)
+BUN_ALREADY_INSTALLED=$(command -v bun)
 
 if [[ -z "$BUN_ALREADY_INSTALLED" ]]; then
   echo "🔧 install-bun.sh: installing bun"

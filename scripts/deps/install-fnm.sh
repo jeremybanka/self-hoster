@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-FNM_ALREADY_INSTALLED=$(which fnm)
+FNM_ALREADY_INSTALLED=$(command -v fnm)
 
 if [[ -z "$FNM_ALREADY_INSTALLED" ]]; then
   echo "🔧 install-fnm.sh: installing fnm"

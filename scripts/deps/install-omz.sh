@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-OMZ_ALREADY_INSTALLED=$(which omz)
+OMZ_ALREADY_INSTALLED=$(command -v omz)
 
 if [[ -z "$OMZ_ALREADY_INSTALLED" ]]; then
   echo "🔧 install-omz.sh: installing omz"
