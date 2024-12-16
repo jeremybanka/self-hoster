@@ -20,8 +20,9 @@ jobs:
       - run: ./scripts/setup.sh
       - run: ./scripts/setup.sh
 
-      # - name: Start
-      #   run: |
-      #     source ~/.zshrc
-      #     timeout 1s nr start
-      #   shell: zsh {0}
+      - name: Start
+        run: |
+          source ~/.zshrc
+          cp .env.defaults .env
+          timeout 1s nr start
+        shell: zsh {0}
