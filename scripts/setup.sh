@@ -23,13 +23,23 @@ echo "🔧 setup.sh: installing global node_modules"
 bun install --cwd ~/.bun/install/global
 echo "❓ what's in ~/.bun"
 ls -la ~/.bun
+echo "---"
+ls -laL ~/.bun
 echo "❓ what's in ~/.bun/bin"
 ls -la ~/.bun/bin
+echo "---"
+ls -laL ~/.bun/bin
 echo "❓ what's in ~/.bun/install"
 ls -la ~/.bun/install
+echo "---"
+ls -laL ~/.bun/install
 echo "❓ what's in ~/.bun/install/global"
 ls -la ~/.bun/install/global
+echo "---"
+ls -laL ~/.bun/install/global
 echo "❓ who owns the global package.json"
+ls -lal ~/.bun/install/global/package.json
+echo "---"
 ls -laL ~/.bun/install/global/package.json
 echo "🔧 setup.sh: installing local node_modules"
 ni
