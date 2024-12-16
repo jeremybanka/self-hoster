@@ -16,14 +16,14 @@ echo "🔧 setup.sh: source ~/.zshrc"
 source ~/.zshrc
 echo "🔧 setup.sh: modifying ownership of global package.json"
 GROUP=$(id -gn $USER)
+GLOBAL_MANIFEST_PATH=./home/.bun/install/global/package.json
 echo "USER: $USER"
 echo "GROUP: $GROUP"
-sudo chown -R $USER:$GROUP ./home/.bun/install/global/package.json
-sudo chmod 666 ./home/.bun/install/global/package.json
+sudo chown -R $USER:$GROUP $GLOBAL_MANIFEST_PATH
+sudo chmod 666 $GLOBAL_MANIFEST_PATH
 echo "🔧 setup.sh: installing global node_modules"
-# bun install -gf
-NPM_GLOBALS=$(jq -r '.dependencies | to_entries | map("\(.key)@\(.value)") | join(" ")' ~/.bun/install/global/package.json)
-bun install --global $NPM_GLOBALS
+NPM_GLOBALS=$(jq -r '.dependencies | to_entries | map("\(.key)@\(.value)") | join(" ")' $GLOBAL_MANIFEST_PATH)
+echo $NPM_GLOBALS | xargs bun install --global
 echo "🔧 setup.sh: restricting ownership of global package.json"
 sudo chmod 644 ./home/.bun/install/global/package.json
 echo "❓ what's in ~/.bun"
@@ -48,8 +48,6 @@ echo "---"
 ls -laL ~/.bun/install/global/package.json
 echo "❓ what's in the global package.json"
 cat ~/.bun/install/global/package.json
-echo "❓ did the binaries perhaps get relative-placed?"
-ls -la ./home/.bun
-ls -la ./home/.bun/bin
+
 echo "🔧 setup.sh: installing local node_modules"
 ni
