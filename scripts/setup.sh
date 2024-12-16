@@ -1,5 +1,8 @@
 #!/bin/zsh
 
+echo "🔧 setup.sh: source ~/.zshrc"
+source ~/.zshrc
+
 echo "🔧 setup.sh: installing omz"
 ./scripts/deps/install-omz.sh
 echo "🔧 setup.sh: installing fnm"
