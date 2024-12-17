@@ -33,5 +33,4 @@ jobs:
             echo "🚨 tempest.games::backend did not start up in time"
             exit 1
           fi
-
         shell: zsh {0}
