@@ -13,7 +13,6 @@ sudo apt install -y \
   python3-certbot-nginx \
   snort \
   stow \
-  tmux \
   vim \
   zsh
 
