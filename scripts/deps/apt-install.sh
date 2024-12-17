@@ -7,6 +7,7 @@ sudo apt install -y \
   git \
   iptables \
   iptables-persistent \
+  lnav \
   nginx \
   openssh-server \
   postgresql-common \
