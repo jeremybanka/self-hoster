@@ -23,6 +23,8 @@ jobs:
       - name: Generate Certs
         run: ./scripts/sign-certificate.sh
 
+      - run: git diff
+
       - name: Start
         run: |
           source ~/.zshrc
