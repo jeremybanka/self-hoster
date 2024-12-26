@@ -11,13 +11,13 @@
 	"editor.codeActionsOnSave": {
 		"quickfix.biome": "explicit"
 	},
-	"[nginx]": {
-		"editor.defaultFormatter": "AaaaronZhou.nginx-config-formatter-vscode-extension"
+	"[NGINX]": {
+		"editor.defaultFormatter": "hangxingliu.vscode-nginx-conf-hint"
 	},
 	"[json]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"files.associations": {
 		".env.*": "properties"
-	},
+	}
 }
