@@ -11,6 +11,11 @@ if [ "$1" = "--real" ]; then
   EXTRA_ARGS=""
 fi
 
-sudo certbot --nginx $EXTRA_ARGS -d tempest.games
-sudo certbot --nginx $EXTRA_ARGS -d realtime.tempest.games
-sudo certbot --nginx $EXTRA_ARGS -d flightdeck.tempest.games
+sudo certbot --nginx \
+  -d tempest.games \
+  -d realtime.tempest.games \
+  -d flightdeck.tempest.games \
+  $EXTRA_ARGS \
+  --email admin@tempest.games \
+  --agree-tos \
+  --non-interactive
