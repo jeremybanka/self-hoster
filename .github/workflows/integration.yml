@@ -20,6 +20,9 @@ jobs:
       - run: ./scripts/setup.sh
       - run: ./scripts/setup.sh
 
+      - name: Generate Certs
+        run: ./scripts/sign-certificate.sh
+
       - name: Start
         run: |
           source ~/.zshrc
