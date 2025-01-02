@@ -1,6 +1,6 @@
 {
-  "dependencies": {
-    "@antfu/ni": "0.23.2",
-    "diff-so-fancy": "1.4.3"
-  }
+	"dependencies": {
+		"@antfu/ni": "0.23.2",
+		"diff-so-fancy": "1.4.3"
+	}
 }

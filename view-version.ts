@@ -1,10 +1,10 @@
 #!/usr/bin/env bun
 
-import { $ } from "bun";
+import { $ } from "bun"
 
-const releaseVersion = `${process.argv.at(-1)}\n`;
+const releaseVersion = `${process.argv.at(-1)}\n`
 const availableVersion = (
 	await $`npm view tempest.games version`
-).stdout.toString();
+).stdout.toString()
 
-if (availableVersion !== releaseVersion) process.exit(1);
+if (availableVersion !== releaseVersion) process.exit(1)

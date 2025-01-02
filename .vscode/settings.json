@@ -14,9 +14,6 @@
 	"[NGINX]": {
 		"editor.defaultFormatter": "hangxingliu.vscode-nginx-conf-hint"
 	},
-	"[json]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
 	"files.associations": {
 		".env.*": "properties"
 	}
