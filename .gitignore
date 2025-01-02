@@ -175,4 +175,8 @@ dist
 # Finder (MacOS) folder config
 .DS_Store
 
+# FlightDeck
+services
+
+# RepoMix
 repomix-output.txt
