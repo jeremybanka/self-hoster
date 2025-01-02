@@ -4,6 +4,7 @@
 	"scripts": {
 		"test": "./flightdeck.test-update.node.ts",
 		"start": "dotenv flightdeck > logs/flightdeck.jsonl",
+		"inspect": "lnav logs/flightdeck.jsonl",
 		"setup": "dotenv setup-db"
 	},
 	"devDependencies": {
