@@ -23,3 +23,6 @@ echo "🔧 setup.sh: installing global node_modules"
 
 echo "🔧 setup.sh: installing local node_modules"
 ni
+
+echo "🔧 setup.sh: installing flightdeck lnav format"
+lnav -i ./node_modules/flightdeck/dist/flightdeck_log.json
