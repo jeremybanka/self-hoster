@@ -10,6 +10,19 @@ jobs:
   setup:
     name: Startup 
     runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:17.2-alpine3.20
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: your_password
+          POSTGRES_DB: testdb
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready --health-interval 1s --health-timeout 0.5s --health-retries 30
+
     steps:
       - name: Get Zsh
         run: sudo apt install zsh
