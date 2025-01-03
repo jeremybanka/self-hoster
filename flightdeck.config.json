@@ -6,6 +6,7 @@
 		"backend": { "run": "na backend", "waitFor": true }
 	},
 	"flightdeckRootDir": "./services",
+	"jsonLogging": true,
 	"scripts": {
 		"download": "echo '2024 TEMPEST GAMES'",
 		"install": "nu tempest.games --latest && na setup-db",

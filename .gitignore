@@ -2,7 +2,8 @@
 
 # Logs
 
-logs
+logs/*
+!logs/.gitkeep
 _.log
 npm-debug.log_
 yarn-debug.log*
@@ -58,6 +59,8 @@ build/Release
 
 node_modules/
 jspm_packages/
+.yalc/
+yalc.lock
 
 # Snowpack dependency directory (https://snowpack.dev/)
 
@@ -174,4 +177,8 @@ dist
 # Finder (MacOS) folder config
 .DS_Store
 
+# FlightDeck
+services
+
+# RepoMix
 repomix-output.txt

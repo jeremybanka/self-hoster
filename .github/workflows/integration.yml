@@ -10,6 +10,19 @@ jobs:
   setup:
     name: Startup 
     runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:17.2-alpine3.20
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: your_password
+          POSTGRES_DB: testdb
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready --health-interval 1s --health-timeout 0.5s --health-retries 30
+
     steps:
       - name: Get Zsh
         run: sudo apt install zsh
@@ -24,13 +37,15 @@ jobs:
         run: |
           source ~/.zshrc
           cp .env.defaults .env
-          timeout 3s nr start > app-output.log 2>&1 || true
-          if ! grep -q "tempest.games::frontend: 💬 alive" app-output.log; then
+          timeout 3s nr start || true
+          if ! grep -q "🛫 frontend server running at http://localhost:3333/" logs/flightdeck.jsonl; then
             echo "🚨 tempest.games::frontend did not start up in time"
+            cat logs/flightdeck.jsonl
             exit 1
           fi
-          if ! grep -q "tempest.games::backend: 💬 alive" app-output.log; then
+          if ! grep -q "🛫 backend server ready on port 4444" logs/flightdeck.jsonl; then
             echo "🚨 tempest.games::backend did not start up in time"
+            cat logs/flightdeck.jsonl
             exit 1
           fi
         shell: zsh {0}
