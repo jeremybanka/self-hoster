@@ -49,4 +49,5 @@ jobs:
             cat logs/flightdeck.jsonl
             exit 1
           fi
+          nr stop || true
         shell: zsh {0}
