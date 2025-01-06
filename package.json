@@ -3,6 +3,7 @@
 	"type": "module",
 	"scripts": {
 		"start": "nohup dotenv flightdeck >> logs/flightdeck.jsonl 2> /dev/null &",
+		"stop": "kill $(pgrep node) $(pgrep bun)",
 		"inspect": "lnav logs/flightdeck.jsonl",
 		"setup": "dotenv setup-db"
 	},
