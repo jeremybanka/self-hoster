@@ -37,9 +37,10 @@ jobs:
         run: |
           source ~/.zshrc
           cp .env.defaults .env
-          timeout 3s nr start || true
-          ls
-          ls logs
+          nr start
+          timeout 3s
+          echo "🚀 flightdeck logs:"
+          ls -lah logs
           cat logs/flightdeck.jsonl
           if ! grep -q "🛫 frontend server running at http://localhost:3333/" logs/flightdeck.jsonl; then
             echo "🚨 tempest.games::frontend did not start up in time"
