@@ -17,6 +17,6 @@
 		"typescript": "5.7.2"
 	},
 	"dependencies": {
-		"tempest.games": "^0.1.22"
+		"tempest.games": "^0.1.26"
 	}
 }
