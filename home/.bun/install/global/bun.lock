@@ -3,13 +3,13 @@
   "workspaces": {
     "": {
       "dependencies": {
-        "@antfu/ni": "23.3.0",
+        "@antfu/ni": "23.3.1",
         "diff-so-fancy": "1.4.3",
       },
     },
   },
   "packages": {
-    "@antfu/ni": ["@antfu/ni@23.3.0", "", { "bin": { "ni": "bin/ni.mjs", "nci": "bin/nci.mjs", "nr": "bin/nr.mjs", "nu": "bin/nu.mjs", "nlx": "bin/nlx.mjs", "na": "bin/na.mjs", "nun": "bin/nun.mjs" } }, "sha512-H3avrIQMnmo8rJu9w62vE/c4WGgLCGemnBDg83pgdARIttKgyJpTOX5hQ4JFjeZ7fRfrzkRCCDg3vLxseH4Xtg=="],
+    "@antfu/ni": ["@antfu/ni@23.3.1", "", { "bin": { "ni": "bin/ni.mjs", "nci": "bin/nci.mjs", "nr": "bin/nr.mjs", "nu": "bin/nu.mjs", "nlx": "bin/nlx.mjs", "na": "bin/na.mjs", "nun": "bin/nun.mjs" } }, "sha512-C90iyzm/jLV7Lomv2UzwWUzRv9WZr1oRsFRKsX5HjQL4EXrbi9H/RtBkjCP+NF+ABZXUKpAa4F1dkoTaea4zHg=="],
 
     "diff-so-fancy": ["diff-so-fancy@1.4.3", "", { "bin": { "diff-so-fancy": "third_party/build_fatpack/diff-so-fancy" } }, "sha512-ZXNe6ZLdzCHt5cdMPwQOsuNcPI86VYArxloIqmedkTK3qlii59gHe5eR82CrNrc4aZ/A0V1b7askmDzBwftZKA=="],
   }
