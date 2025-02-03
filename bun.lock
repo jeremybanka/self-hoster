@@ -3,7 +3,7 @@
   "workspaces": {
     "": {
       "dependencies": {
-        "tempest.games": "^0.1.27",
+        "tempest.games": "^0.1.28",
       },
       "devDependencies": {
         "@biomejs/biome": "1.9.4",
@@ -189,7 +189,7 @@
 
     "object-assign": ["object-assign@4.1.1", "", {}, "sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg=="],
 
-    "openai": ["openai@4.81.0", "", { "dependencies": { "@types/node": "^18.11.18", "@types/node-fetch": "^2.6.4", "abort-controller": "^3.0.0", "agentkeepalive": "^4.2.1", "form-data-encoder": "1.7.2", "formdata-node": "^4.3.2", "node-fetch": "^2.6.7" }, "peerDependencies": { "ws": "^8.18.0", "zod": "^3.23.8" }, "optionalPeers": ["ws", "zod"], "bin": { "openai": "bin/cli" } }, "sha512-lXkFkV+He3O6RGnldHncRGef4uWHssDsAVwN5I3bWcgIdDPy/w8vgtIAwvZxAj49m4WiwWVD0+eGTJ9xOv/ISA=="],
+    "openai": ["openai@4.82.0", "", { "dependencies": { "@types/node": "^18.11.18", "@types/node-fetch": "^2.6.4", "abort-controller": "^3.0.0", "agentkeepalive": "^4.2.1", "form-data-encoder": "1.7.2", "formdata-node": "^4.3.2", "node-fetch": "^2.6.7" }, "peerDependencies": { "ws": "^8.18.0", "zod": "^3.23.8" }, "optionalPeers": ["ws", "zod"], "bin": { "openai": "bin/cli" } }, "sha512-1bTxOVGZuVGsKKUWbh3BEwX1QxIXUftJv+9COhhGGVDTFwiaOd4gWsMynF2ewj1mg6by3/O+U8+EEHpWRdPaJg=="],
 
     "path-key": ["path-key@3.1.1", "", {}, "sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q=="],
 
@@ -203,7 +203,7 @@
 
     "safedeposit": ["safedeposit@0.0.1", "", {}, "sha512-RGY3uyE9F41GS27UyQtz6IbWC17KMmZ8I4wNWSCy4MUd5q6y8oWzpc0r25gCowXWCdFW4UD7h7ziB3pq88uBnA=="],
 
-    "safegen": ["safegen@0.2.6", "", { "dependencies": { "atom.io": "0.30.7", "varmint": "0.3.6" }, "peerDependencies": { "@anthropic-ai/sdk": ">=0.32.0", "openai": ">=4.0.0", "zod": ">=3.0.0", "zod-to-json-schema": ">=3.0.0" }, "optionalPeers": ["@anthropic-ai/sdk", "openai"] }, "sha512-yb66cfLyVjIkVfKQa78NAqDdlaoZGO40esQO1Qyf/TDsUqcDSTeEjdc8nQPV2557+OH11q1xSj95EcMqdPNZxw=="],
+    "safegen": ["safegen@0.2.7", "", { "dependencies": { "atom.io": "0.30.7", "varmint": "0.3.7" }, "peerDependencies": { "@anthropic-ai/sdk": ">=0.32.0", "openai": ">=4.0.0", "zod": ">=3.0.0", "zod-to-json-schema": ">=3.0.0" }, "optionalPeers": ["@anthropic-ai/sdk", "openai"] }, "sha512-fOM+VKvPWz2L4fu3FO75HLfSRsH0IcB5RzXlw2bSnyhzXYxlTCLpZ2csNpCxeCcg9iH+Wbjbc56iTh59VjSqdA=="],
 
     "scheduler": ["scheduler@0.25.0", "", {}, "sha512-xFVuu11jh+xcO7JOAGJNOXld8/TcEHK/4CituBUeUb5hqxJLj9YuemAEuvm9gQ/+pgXYfbQuqAkiYu+u7YEsNA=="],
 
@@ -223,17 +223,17 @@
 
     "source-map-support": ["source-map-support@0.5.21", "", { "dependencies": { "buffer-from": "^1.0.0", "source-map": "^0.6.0" } }, "sha512-uBHU3L3czsIyYXKX88fdrGovxdSCoTGDRZ6SYXtSRxLZUzHg5P/66Ht6uoUlHu9EZod+inXhKo3qQgwXUT/y1w=="],
 
-    "tempest.games": ["tempest.games@0.1.27", "", { "dependencies": { "@t3-oss/env-core": "0.12.0", "atom.io": "0.30.7", "cron": "3.5.0", "drizzle-orm": "0.39.1", "openai": "4.81.0", "postgres": "3.4.5", "react": "19.0.0", "react-dom": "19.0.0", "safedeposit": "0.0.1", "safegen": "0.2.6", "socket.io": "4.8.1", "socket.io-client": "4.8.1", "treetrunks": "0.0.3", "zod": "3.24.1", "zod-to-json-schema": "3.24.1" }, "bin": { "frontend": "bin/frontend.bun.js", "backend": "bin/backend.bun.js", "setup-db": "bin/setup-db.bun.js", "interactive-db": "bin/interactive-db.bun.js" } }, "sha512-S6J2BDtbTABxZ3IAym9GQcMeFrsZoUolnE5SQuH1JyGbW3EAWc6WwM73Q9cN1fqw+IFRU17GwkzYW4FN3XU26g=="],
+    "tempest.games": ["tempest.games@0.1.28", "", { "dependencies": { "@t3-oss/env-core": "0.12.0", "atom.io": "0.30.7", "cron": "3.5.0", "drizzle-orm": "0.39.1", "openai": "4.82.0", "postgres": "3.4.5", "react": "19.0.0", "react-dom": "19.0.0", "safedeposit": "0.0.2", "safegen": "0.2.7", "socket.io": "4.8.1", "socket.io-client": "4.8.1", "treetrunks": "0.0.4", "zod": "3.24.1", "zod-to-json-schema": "3.24.1" }, "bin": { "frontend": "bin/frontend.bun.js", "backend": "bin/backend.bun.js", "setup-db": "bin/setup-db.bun.js", "interactive-db": "bin/interactive-db.bun.js" } }, "sha512-hn+eZpwc6RAU1IPaeckOMmv3Hu8RN1B2+FWnEUxwQoEaSreujBltw95U1mS2PJddFUjhZ1KHEmNGGZZmXEVSpA=="],
 
     "tr46": ["tr46@0.0.3", "", {}, "sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw=="],
 
-    "treetrunks": ["treetrunks@0.0.3", "", {}, "sha512-KYdywBzsvlT+O9QoTibTe9edttCuDuhyGbE+z+zL7Q9eLjUN2qv5LjdvDnTMoy50lTCNUUuqQiuX7zXmVNXOwg=="],
+    "treetrunks": ["treetrunks@0.0.4", "", {}, "sha512-enfoB7wiep+KG1GVHaHD8ag/uby5/VRUB9eLJa/usvDW9pxIpNFPoDUqQwOq27T8Wq74uvEjefmuTVZ5GXpnZA=="],
 
     "typescript": ["typescript@5.7.3", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-84MVSjMEHP+FQRPy3pX9sTVV/INIex71s9TL2Gm5FG/WG1SqXeKyZ0k7/blY/4FdOzI12CBy1vGc4og/eus0fw=="],
 
     "undici-types": ["undici-types@6.20.0", "", {}, "sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg=="],
 
-    "varmint": ["varmint@0.3.6", "", {}, "sha512-AlmHTKlZ52+3DhsSoCiYX+biMA5b+v400ooam80W5KO+I0RWUiOJmAG3pE9MeNZxMEti8NBZJ3W4mR9teYe4lQ=="],
+    "varmint": ["varmint@0.3.7", "", {}, "sha512-9Pt1LPgjeyxD+u6oQEYQsrkeMkVQWunaoBinqmM5RHiuAnj4PWGOPKSZaYVReLtmB6A0R/wKg96XmiYDBR8vyQ=="],
 
     "vary": ["vary@1.1.2", "", {}, "sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg=="],
 
@@ -263,6 +263,8 @@
 
     "bun-types/@types/node": ["@types/node@22.12.0", "", { "dependencies": { "undici-types": "~6.20.0" } }, "sha512-Fll2FZ1riMjNmlmJOdAyY5pUbkftXslB5DgEzlIuNaiWhXd00FhWxVC/r4yV/4wBb9JfImTu+jiSvXTkJ7F/gA=="],
 
+    "comline/treetrunks": ["treetrunks@0.0.3", "", {}, "sha512-KYdywBzsvlT+O9QoTibTe9edttCuDuhyGbE+z+zL7Q9eLjUN2qv5LjdvDnTMoy50lTCNUUuqQiuX7zXmVNXOwg=="],
+
     "comline/zod": ["zod@3.23.8", "", {}, "sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g=="],
 
     "comline/zod-to-json-schema": ["zod-to-json-schema@3.23.3", "", { "peerDependencies": { "zod": "^3.23.3" } }, "sha512-TYWChTxKQbRJp5ST22o/Irt9KC5nj7CdBKYB/AosCRdj/wxEMvv4NNaj9XVUHDOIp53ZxArGhnw5HMZziPFjog=="],
@@ -270,6 +272,8 @@
     "engine.io/@types/node": ["@types/node@22.5.5", "", { "dependencies": { "undici-types": "~6.19.2" } }, "sha512-Xjs4y5UPO/CLdzpgR6GirZJx36yScjh73+2NlLlkFRSoQN8B0DpfXPdZGnvVmLRLOsqDpOfTNv7D9trgGhmOIA=="],
 
     "openai/@types/node": ["@types/node@18.19.55", "", { "dependencies": { "undici-types": "~5.26.4" } }, "sha512-zzw5Vw52205Zr/nmErSEkN5FLqXPuKX/k5d1D7RKHATGqU7y6YfX9QxZraUzUrFGqH6XzOzG196BC35ltJC4Cw=="],
+
+    "tempest.games/safedeposit": ["safedeposit@0.0.2", "", {}, "sha512-L+PmuMP/UgcRjOfdXduntL17IPLGRU9hmhtkJfy4/CaSbPWf9PL5B+z5aVakoTVhkHM3+TsB3IMJ6hVEH6PO2w=="],
 
     "@esbuild-kit/core-utils/esbuild/@esbuild/android-arm": ["@esbuild/android-arm@0.18.20", "", { "os": "android", "cpu": "arm" }, "sha512-fyi7TDI/ijKKNZTUJAQqiG5T7YjJXgnzkURqmGj13C6dCqckZBLdl4h7bkhHt/t0WP+zO9/zwroDvANaOqO5Sw=="],
 
