@@ -3,7 +3,7 @@
   "workspaces": {
     "": {
       "dependencies": {
-        "tempest.games": "^0.1.28",
+        "tempest.games": "^0.1.29",
       },
       "devDependencies": {
         "@biomejs/biome": "1.9.4",
@@ -223,7 +223,7 @@
 
     "source-map-support": ["source-map-support@0.5.21", "", { "dependencies": { "buffer-from": "^1.0.0", "source-map": "^0.6.0" } }, "sha512-uBHU3L3czsIyYXKX88fdrGovxdSCoTGDRZ6SYXtSRxLZUzHg5P/66Ht6uoUlHu9EZod+inXhKo3qQgwXUT/y1w=="],
 
-    "tempest.games": ["tempest.games@0.1.28", "", { "dependencies": { "@t3-oss/env-core": "0.12.0", "atom.io": "0.30.7", "cron": "3.5.0", "drizzle-orm": "0.39.1", "openai": "4.82.0", "postgres": "3.4.5", "react": "19.0.0", "react-dom": "19.0.0", "safedeposit": "0.0.2", "safegen": "0.2.7", "socket.io": "4.8.1", "socket.io-client": "4.8.1", "treetrunks": "0.0.4", "zod": "3.24.1", "zod-to-json-schema": "3.24.1" }, "bin": { "frontend": "bin/frontend.bun.js", "backend": "bin/backend.bun.js", "setup-db": "bin/setup-db.bun.js", "interactive-db": "bin/interactive-db.bun.js" } }, "sha512-hn+eZpwc6RAU1IPaeckOMmv3Hu8RN1B2+FWnEUxwQoEaSreujBltw95U1mS2PJddFUjhZ1KHEmNGGZZmXEVSpA=="],
+    "tempest.games": ["tempest.games@0.1.29", "", { "dependencies": { "@t3-oss/env-core": "0.12.0", "atom.io": "0.30.7", "cron": "3.5.0", "drizzle-orm": "0.39.1", "openai": "4.82.0", "postgres": "3.4.5", "react": "19.0.0", "react-dom": "19.0.0", "safedeposit": "0.1.0", "safegen": "0.2.7", "socket.io": "4.8.1", "socket.io-client": "4.8.1", "treetrunks": "0.0.4", "zod": "3.24.1", "zod-to-json-schema": "3.24.1" }, "bin": { "frontend": "bin/frontend.bun.js", "backend": "bin/backend.bun.js", "setup-db": "bin/setup-db.bun.js", "interactive-db": "bin/interactive-db.bun.js" } }, "sha512-7Tgi23+CiYmmBSwGc7KzE3heS5y3JvwjN0VlYdZzZNWhMh+hqNVnHqbBUa9W2ki3w/7e09+C9uxmWg1TKMmc8g=="],
 
     "tr46": ["tr46@0.0.3", "", {}, "sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw=="],
 
@@ -266,8 +266,6 @@
     "engine.io/@types/node": ["@types/node@22.5.5", "", { "dependencies": { "undici-types": "~6.19.2" } }, "sha512-Xjs4y5UPO/CLdzpgR6GirZJx36yScjh73+2NlLlkFRSoQN8B0DpfXPdZGnvVmLRLOsqDpOfTNv7D9trgGhmOIA=="],
 
     "openai/@types/node": ["@types/node@18.19.55", "", { "dependencies": { "undici-types": "~5.26.4" } }, "sha512-zzw5Vw52205Zr/nmErSEkN5FLqXPuKX/k5d1D7RKHATGqU7y6YfX9QxZraUzUrFGqH6XzOzG196BC35ltJC4Cw=="],
-
-    "tempest.games/safedeposit": ["safedeposit@0.0.2", "", {}, "sha512-L+PmuMP/UgcRjOfdXduntL17IPLGRU9hmhtkJfy4/CaSbPWf9PL5B+z5aVakoTVhkHM3+TsB3IMJ6hVEH6PO2w=="],
 
     "@esbuild-kit/core-utils/esbuild/@esbuild/android-arm": ["@esbuild/android-arm@0.18.20", "", { "os": "android", "cpu": "arm" }, "sha512-fyi7TDI/ijKKNZTUJAQqiG5T7YjJXgnzkURqmGj13C6dCqckZBLdl4h7bkhHt/t0WP+zO9/zwroDvANaOqO5Sw=="],
 
