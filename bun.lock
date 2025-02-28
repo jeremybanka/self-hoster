@@ -3,7 +3,7 @@
   "workspaces": {
     "": {
       "dependencies": {
-        "tempest.games": "^0.1.33",
+        "tempest.games": "^0.1.34",
       },
       "devDependencies": {
         "@biomejs/biome": "1.9.4",
@@ -237,7 +237,7 @@
 
     "source-map-support": ["source-map-support@0.5.21", "", { "dependencies": { "buffer-from": "^1.0.0", "source-map": "^0.6.0" } }, "sha512-uBHU3L3czsIyYXKX88fdrGovxdSCoTGDRZ6SYXtSRxLZUzHg5P/66Ht6uoUlHu9EZod+inXhKo3qQgwXUT/y1w=="],
 
-    "tempest.games": ["tempest.games@0.1.33", "", { "dependencies": { "@t3-oss/env-core": "0.12.0", "atom.io": "0.32.1", "cron": "4.1.0", "drizzle-orm": "0.40.0", "openai": "4.86.1", "postgres": "3.4.5", "react": "19.0.0", "react-dom": "19.0.0", "safedeposit": "0.1.0", "safegen": "0.2.11", "socket.io": "4.8.1", "socket.io-client": "4.8.1", "treetrunks": "0.0.4", "zod": "3.24.2", "zod-to-json-schema": "3.24.3" }, "bin": { "frontend": "bin/frontend.bun.js", "backend": "bin/backend.bun.js", "setup-db": "bin/setup-db.bun.js", "interactive-db": "bin/interactive-db.bun.js" } }, "sha512-6cpS//TxO7w6b8TZT5qqp9Fm27XXXc1ctBi8QwcOa/MQJo2FFGTgJWp65uIPTp+RgwGKVamGwiL6TTSBhGc+ZQ=="],
+    "tempest.games": ["tempest.games@0.1.34", "", { "dependencies": { "@t3-oss/env-core": "0.12.0", "atom.io": "0.32.2", "cron": "4.1.0", "drizzle-orm": "0.40.0", "openai": "4.86.1", "postgres": "3.4.5", "react": "19.0.0", "react-dom": "19.0.0", "safedeposit": "0.1.0", "safegen": "0.2.11", "socket.io": "4.8.1", "socket.io-client": "4.8.1", "treetrunks": "0.0.4", "zod": "3.24.2", "zod-to-json-schema": "3.24.3" }, "bin": { "frontend": "bin/frontend.bun.js", "backend": "bin/backend.bun.js", "setup-db": "bin/setup-db.bun.js", "interactive-db": "bin/interactive-db.bun.js" } }, "sha512-FmLasr1guGPkrGRJ3T+PPEAB/XXlYkV2BXmQgLrvMUybL62gvjjIYi0evlgtyXjIeZ7bgqhKOOyWjTrh4oU0NQ=="],
 
     "tr46": ["tr46@0.0.3", "", {}, "sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw=="],
 
@@ -286,8 +286,6 @@
     "openai/@types/node": ["@types/node@18.19.55", "", { "dependencies": { "undici-types": "~5.26.4" } }, "sha512-zzw5Vw52205Zr/nmErSEkN5FLqXPuKX/k5d1D7RKHATGqU7y6YfX9QxZraUzUrFGqH6XzOzG196BC35ltJC4Cw=="],
 
     "safegen/atom.io": ["atom.io@0.30.7", "", { "peerDependencies": { "@floating-ui/react": ">=0.25.0", "@floating-ui/react-dom": ">=2.0.0", "@testing-library/react": ">=14.0.0", "eslint": ">=9.0.0", "motion": ">=11.0.0", "react": "^18.0.0 || ^19.0.0", "socket.io": ">=4.0.0", "socket.io-client": ">=4.0.0" }, "optionalPeers": ["@floating-ui/react", "@floating-ui/react-dom", "@testing-library/react", "eslint", "motion", "react", "socket.io", "socket.io-client"] }, "sha512-HOOERHVU1GujFhay4q+pdEqFkHNU9LGE6JNtaQYqztZ5ClvbljH39dzPR0kJ64a6pi6WQ05so4An46U7/n5Hmw=="],
-
-    "tempest.games/atom.io": ["atom.io@0.32.1", "", { "peerDependencies": { "@floating-ui/react": ">=0.25.0", "@floating-ui/react-dom": ">=2.0.0", "@testing-library/react": ">=14.0.0", "eslint": ">=9.0.0", "motion": ">=11.0.0", "react": "^18.0.0 || ^19.0.0", "socket.io": ">=4.0.0", "socket.io-client": ">=4.0.0" }, "optionalPeers": ["@floating-ui/react", "@floating-ui/react-dom", "@testing-library/react", "eslint", "motion", "react", "socket.io", "socket.io-client"] }, "sha512-+QiN8x6/caYhwe/gPj7HXa8LpG4oJSrHB6TH8t/vUYmUD2MuSGSbawjxLNfqdkWFEhq3xnduPd8ZUPatWgo5kA=="],
 
     "varmint/comline": ["comline@0.1.7", "", { "dependencies": { "treetrunks": "0.0.4", "zod": "3.24.1", "zod-to-json-schema": "3.24.1" } }, "sha512-DybZzQ2Z9rKg1pyDHl2/0YlSHDHv5cuCwg4208szbsdhhWGBL0f6c/FiJbCVPks6/15H4/ekIFlq9pVORTURLg=="],
 
