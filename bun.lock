@@ -11,7 +11,7 @@
         "bun-types": "1.2.4",
         "dotenv-cli": "8.0.0",
         "drizzle-kit": "0.30.5",
-        "flightdeck": "0.2.18",
+        "flightdeck": "0.2.19",
         "typescript": "5.8.2",
       },
     },
@@ -113,7 +113,7 @@
 
     "asynckit": ["asynckit@0.4.0", "", {}, "sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q=="],
 
-    "atom.io": ["atom.io@0.32.1", "", { "peerDependencies": { "@floating-ui/react": ">=0.25.0", "@floating-ui/react-dom": ">=2.0.0", "@testing-library/react": ">=14.0.0", "eslint": ">=9.0.0", "motion": ">=11.0.0", "react": "^18.0.0 || ^19.0.0", "socket.io": ">=4.0.0", "socket.io-client": ">=4.0.0" }, "optionalPeers": ["@floating-ui/react", "@floating-ui/react-dom", "@testing-library/react", "eslint", "motion", "react", "socket.io", "socket.io-client"] }, "sha512-+QiN8x6/caYhwe/gPj7HXa8LpG4oJSrHB6TH8t/vUYmUD2MuSGSbawjxLNfqdkWFEhq3xnduPd8ZUPatWgo5kA=="],
+    "atom.io": ["atom.io@0.32.2", "", { "peerDependencies": { "@floating-ui/react": ">=0.25.0", "@floating-ui/react-dom": ">=2.0.0", "@testing-library/react": ">=14.0.0", "eslint": ">=9.0.0", "motion": ">=11.0.0", "react": "^18.0.0 || ^19.0.0", "socket.io": ">=4.0.0", "socket.io-client": ">=4.0.0" }, "optionalPeers": ["@floating-ui/react", "@floating-ui/react-dom", "@testing-library/react", "eslint", "motion", "react", "socket.io", "socket.io-client"] }, "sha512-Wr2ejhS//RnElh9CXuPKEGi9Demy4XKYuJTy1lE1RCY7j6gZRopngnflwIDCX4jNiosey8mWNFJdDaPv332rRg=="],
 
     "base64id": ["base64id@2.0.0", "", {}, "sha512-lGe34o6EHj9y3Kts9R4ZYs/Gr+6N7MCaMlIFA3F1R2O5/m7K06AxfSeO5530PEERE6/WyEg3lsuyw4GHlPZHog=="],
 
@@ -165,7 +165,7 @@
 
     "event-target-shim": ["event-target-shim@5.0.1", "", {}, "sha512-i/2XbnSz/uxRCU6+NdVJgKWDTM427+MqYbkQzD321DuCQJUqOuJKIA0IM2+W2xtYHdKOmZ4dR6fExsd4SXL+WQ=="],
 
-    "flightdeck": ["flightdeck@0.2.18", "", { "dependencies": { "@t3-oss/env-core": "0.12.0", "atom.io": "0.32.1", "comline": "0.1.9", "cron": "4.1.0", "safedeposit": "0.1.0", "zod": "3.24.2" }, "bin": { "flightdeck": "bin/flightdeck.bin.js", "klaxon": "bin/klaxon.bin.js" } }, "sha512-1qocdElFXyBFh5cTpSM4s8cmEttRj3NJfompeBCC29meTFidnZ6O++eI40p39yG0XPbAPfAHHfkTgzrOALhWDA=="],
+    "flightdeck": ["flightdeck@0.2.19", "", { "dependencies": { "@t3-oss/env-core": "0.12.0", "atom.io": "0.32.2", "comline": "0.1.9", "cron": "4.1.0", "safedeposit": "0.1.0", "zod": "3.24.2" }, "bin": { "flightdeck": "bin/flightdeck.bin.js", "klaxon": "bin/klaxon.bin.js" } }, "sha512-jtqxRlgCykAVueo+lUVllejBB4Uak9HLulTjO1ImB53c8GA7bNRImacB2KWK1Kt4w3e8qt/w++NhyHkUV75o7Q=="],
 
     "form-data": ["form-data@4.0.1", "", { "dependencies": { "asynckit": "^0.4.0", "combined-stream": "^1.0.8", "mime-types": "^2.1.12" } }, "sha512-tzN8e4TX8+kkxGPK8D5u0FNmjPUjw3lwC9lSLxxoB/+GtsJG91CO8bSWy73APlgAZzZbXEYZJuxjkHH2w+Ezhw=="],
 
@@ -286,6 +286,8 @@
     "openai/@types/node": ["@types/node@18.19.55", "", { "dependencies": { "undici-types": "~5.26.4" } }, "sha512-zzw5Vw52205Zr/nmErSEkN5FLqXPuKX/k5d1D7RKHATGqU7y6YfX9QxZraUzUrFGqH6XzOzG196BC35ltJC4Cw=="],
 
     "safegen/atom.io": ["atom.io@0.30.7", "", { "peerDependencies": { "@floating-ui/react": ">=0.25.0", "@floating-ui/react-dom": ">=2.0.0", "@testing-library/react": ">=14.0.0", "eslint": ">=9.0.0", "motion": ">=11.0.0", "react": "^18.0.0 || ^19.0.0", "socket.io": ">=4.0.0", "socket.io-client": ">=4.0.0" }, "optionalPeers": ["@floating-ui/react", "@floating-ui/react-dom", "@testing-library/react", "eslint", "motion", "react", "socket.io", "socket.io-client"] }, "sha512-HOOERHVU1GujFhay4q+pdEqFkHNU9LGE6JNtaQYqztZ5ClvbljH39dzPR0kJ64a6pi6WQ05so4An46U7/n5Hmw=="],
+
+    "tempest.games/atom.io": ["atom.io@0.32.1", "", { "peerDependencies": { "@floating-ui/react": ">=0.25.0", "@floating-ui/react-dom": ">=2.0.0", "@testing-library/react": ">=14.0.0", "eslint": ">=9.0.0", "motion": ">=11.0.0", "react": "^18.0.0 || ^19.0.0", "socket.io": ">=4.0.0", "socket.io-client": ">=4.0.0" }, "optionalPeers": ["@floating-ui/react", "@floating-ui/react-dom", "@testing-library/react", "eslint", "motion", "react", "socket.io", "socket.io-client"] }, "sha512-+QiN8x6/caYhwe/gPj7HXa8LpG4oJSrHB6TH8t/vUYmUD2MuSGSbawjxLNfqdkWFEhq3xnduPd8ZUPatWgo5kA=="],
 
     "varmint/comline": ["comline@0.1.7", "", { "dependencies": { "treetrunks": "0.0.4", "zod": "3.24.1", "zod-to-json-schema": "3.24.1" } }, "sha512-DybZzQ2Z9rKg1pyDHl2/0YlSHDHv5cuCwg4208szbsdhhWGBL0f6c/FiJbCVPks6/15H4/ekIFlq9pVORTURLg=="],
 
