@@ -3,14 +3,22 @@
   "workspaces": {
     "": {
       "dependencies": {
-        "@antfu/ni": "23.3.1",
+        "@antfu/ni": "24.1.0",
         "diff-so-fancy": "1.4.3",
       },
     },
   },
   "packages": {
-    "@antfu/ni": ["@antfu/ni@23.3.1", "", { "bin": { "ni": "bin/ni.mjs", "nci": "bin/nci.mjs", "nr": "bin/nr.mjs", "nu": "bin/nu.mjs", "nlx": "bin/nlx.mjs", "na": "bin/na.mjs", "nun": "bin/nun.mjs" } }, "sha512-C90iyzm/jLV7Lomv2UzwWUzRv9WZr1oRsFRKsX5HjQL4EXrbi9H/RtBkjCP+NF+ABZXUKpAa4F1dkoTaea4zHg=="],
+    "@antfu/ni": ["@antfu/ni@24.1.0", "", { "dependencies": { "ansis": "^3.17.0", "fzf": "^0.5.2", "package-manager-detector": "^1.0.0", "tinyexec": "^0.3.2" }, "bin": { "ni": "bin/ni.mjs", "nci": "bin/nci.mjs", "nr": "bin/nr.mjs", "nu": "bin/nu.mjs", "nlx": "bin/nlx.mjs", "na": "bin/na.mjs", "nun": "bin/nun.mjs" } }, "sha512-Pq54C1N16BjLX4aHd7VJiuqxl+KoT9wOSyAZSnC2qDf1MraZ2c2b6FldjfeNsP1HBPvNhlCmZI91bNdmwXuuWQ=="],
+
+    "ansis": ["ansis@3.17.0", "", {}, "sha512-0qWUglt9JEqLFr3w1I1pbrChn1grhaiAR2ocX1PP/flRmxgtwTzPFFFnfIlD6aMOLQZgSuCRlidD70lvx8yhzg=="],
 
     "diff-so-fancy": ["diff-so-fancy@1.4.3", "", { "bin": { "diff-so-fancy": "third_party/build_fatpack/diff-so-fancy" } }, "sha512-ZXNe6ZLdzCHt5cdMPwQOsuNcPI86VYArxloIqmedkTK3qlii59gHe5eR82CrNrc4aZ/A0V1b7askmDzBwftZKA=="],
+
+    "fzf": ["fzf@0.5.2", "", {}, "sha512-Tt4kuxLXFKHy8KT40zwsUPUkg1CrsgY25FxA2U/j/0WgEDCk3ddc/zLTCCcbSHX9FcKtLuVaDGtGE/STWC+j3Q=="],
+
+    "package-manager-detector": ["package-manager-detector@1.0.0", "", {}, "sha512-7elnH+9zMsRo7aS72w6MeRugTpdRvInmEB4Kmm9BVvPw/SLG8gXUGQ+4wF0Mys0RSWPz0B9nuBbDe8vFeA2sfg=="],
+
+    "tinyexec": ["tinyexec@0.3.2", "", {}, "sha512-KQQR9yN7R5+OSwaK0XQoj22pwHoTlgYqmUscPYoknOoWCWfj/5/ABTMRi69FrKU5ffPVh5QcFikpWJI/P1ocHA=="],
   }
 }
