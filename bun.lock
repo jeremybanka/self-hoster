@@ -3,7 +3,7 @@
   "workspaces": {
     "": {
       "dependencies": {
-        "tempest.games": "^0.1.37",
+        "tempest.games": "^0.1.38",
       },
       "devDependencies": {
         "@biomejs/biome": "1.9.4",
@@ -199,7 +199,7 @@
 
     "object-assign": ["object-assign@4.1.1", "", {}, "sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg=="],
 
-    "openai": ["openai@4.91.0", "", { "dependencies": { "@types/node": "^18.11.18", "@types/node-fetch": "^2.6.4", "abort-controller": "^3.0.0", "agentkeepalive": "^4.2.1", "form-data-encoder": "1.7.2", "formdata-node": "^4.3.2", "node-fetch": "^2.6.7" }, "peerDependencies": { "ws": "^8.18.0", "zod": "^3.23.8" }, "optionalPeers": ["ws", "zod"], "bin": { "openai": "bin/cli" } }, "sha512-zdDg6eyvUmCP58QAW7/aPb+XdeavJ51pK6AcwZOWG5QNSLIovVz0XonRL9vARGJRmw8iImmvf2A31Q7hoh544w=="],
+    "openai": ["openai@4.91.1", "", { "dependencies": { "@types/node": "^18.11.18", "@types/node-fetch": "^2.6.4", "abort-controller": "^3.0.0", "agentkeepalive": "^4.2.1", "form-data-encoder": "1.7.2", "formdata-node": "^4.3.2", "node-fetch": "^2.6.7" }, "peerDependencies": { "ws": "^8.18.0", "zod": "^3.23.8" }, "optionalPeers": ["ws", "zod"], "bin": { "openai": "bin/cli" } }, "sha512-DbjrR0hIMQFbxz8+3qBsfPJnh3+I/skPgoSlT7f9eiZuhGBUissPQULNgx6gHNkLoZ3uS0uYS6eXPUdtg4nHzw=="],
 
     "path-key": ["path-key@3.1.1", "", {}, "sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q=="],
 
@@ -237,11 +237,11 @@
 
     "source-map-support": ["source-map-support@0.5.21", "", { "dependencies": { "buffer-from": "^1.0.0", "source-map": "^0.6.0" } }, "sha512-uBHU3L3czsIyYXKX88fdrGovxdSCoTGDRZ6SYXtSRxLZUzHg5P/66Ht6uoUlHu9EZod+inXhKo3qQgwXUT/y1w=="],
 
-    "tempest.games": ["tempest.games@0.1.37", "", { "dependencies": { "@t3-oss/env-core": "0.12.0", "atom.io": "0.32.3", "cron": "4.1.3", "drizzle-orm": "0.41.0", "openai": "4.91.0", "postgres": "3.4.5", "react": "19.1.0", "react-dom": "19.1.0", "safedeposit": "0.1.0", "safegen": "0.2.12", "socket.io": "4.8.1", "socket.io-client": "4.8.1", "treetrunks": "0.1.1", "zod": "3.24.2", "zod-to-json-schema": "3.24.5" }, "bin": { "frontend": "bin/frontend.bun.js", "backend": "bin/backend.bun.js", "setup-db": "bin/setup-db.bun.js", "interactive-db": "bin/interactive-db.bun.js" } }, "sha512-ZK9PthZIIQt3LUTLym2hndEJkqLzNCO3BUcUbIVtSceSaR6z+c4gRopNfgi5BadHoXQXXyZrGdt0lQExaAgr0w=="],
+    "tempest.games": ["tempest.games@0.1.38", "", { "dependencies": { "@t3-oss/env-core": "0.12.0", "atom.io": "0.32.3", "cron": "4.1.3", "drizzle-orm": "0.41.0", "openai": "4.91.1", "postgres": "3.4.5", "react": "19.1.0", "react-dom": "19.1.0", "safedeposit": "0.1.0", "safegen": "0.2.12", "socket.io": "4.8.1", "socket.io-client": "4.8.1", "treetrunks": "0.1.2", "zod": "3.24.2", "zod-to-json-schema": "3.24.5" }, "bin": { "frontend": "bin/frontend.bun.js", "backend": "bin/backend.bun.js", "setup-db": "bin/setup-db.bun.js", "interactive-db": "bin/interactive-db.bun.js" } }, "sha512-qRygsdLXbPTO5ezLMkaYUYLtgYBnv6LYsNVZOl+l5RmtCh4vNY9FCB4Nnk+zV65FcvpGAN+UiZxVj3jXc6zHbA=="],
 
     "tr46": ["tr46@0.0.3", "", {}, "sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw=="],
 
-    "treetrunks": ["treetrunks@0.1.1", "", {}, "sha512-D/MQDu6vtoo5FmDRNapQobO/1w0jB1SMgWbm2zAcneZsVYU6UhTcJWpQYMswUpWz4QEI4CXcU0pGnqk8FKPFmw=="],
+    "treetrunks": ["treetrunks@0.1.2", "", {}, "sha512-VT0SaMvGk41s7aUGrQP/ez+AAOYPsH/M2RXdwkO7bx2FjyIpucu7qlwFognB2KFlufmXAWUVyrwBw5OAZA7FaA=="],
 
     "typescript": ["typescript@5.8.2", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-aJn6wq13/afZp/jT9QZmwEjDqqvSGp1VT5GVg+f/t6/oVyrgXM6BY1h9BRh/O5p3PlUPAe+WuiEZOmb/49RqoQ=="],
 
@@ -276,8 +276,6 @@
     "@types/ws/@types/node": ["@types/node@22.5.5", "", { "dependencies": { "undici-types": "~6.19.2" } }, "sha512-Xjs4y5UPO/CLdzpgR6GirZJx36yScjh73+2NlLlkFRSoQN8B0DpfXPdZGnvVmLRLOsqDpOfTNv7D9trgGhmOIA=="],
 
     "bun-types/@types/node": ["@types/node@22.13.14", "", { "dependencies": { "undici-types": "~6.20.0" } }, "sha512-Zs/Ollc1SJ8nKUAgc7ivOEdIBM8JAKgrqqUYi2J997JuKO7/tpQC+WCetQ1sypiKCQWHdvdg9wBNpUPEWZae7w=="],
-
-    "comline/treetrunks": ["treetrunks@0.1.2", "", {}, "sha512-VT0SaMvGk41s7aUGrQP/ez+AAOYPsH/M2RXdwkO7bx2FjyIpucu7qlwFognB2KFlufmXAWUVyrwBw5OAZA7FaA=="],
 
     "engine.io/@types/node": ["@types/node@22.5.5", "", { "dependencies": { "undici-types": "~6.19.2" } }, "sha512-Xjs4y5UPO/CLdzpgR6GirZJx36yScjh73+2NlLlkFRSoQN8B0DpfXPdZGnvVmLRLOsqDpOfTNv7D9trgGhmOIA=="],
 
