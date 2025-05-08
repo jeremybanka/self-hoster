@@ -11,7 +11,7 @@
     FNM_PATH=$HOME/.local/share/fnm
     if [ -d "$FNM_PATH" ]; then
       PATH=$PATH:$FNM_PATH
-      eval "`fnm env`"
+      eval "`fnm env --use-on-cd --shell=zsh --corepack-enabled`"
     fi
   
   # global node_modules <- bun
