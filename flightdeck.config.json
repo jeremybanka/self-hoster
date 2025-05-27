@@ -9,7 +9,7 @@
 	"jsonLogging": true,
 	"scripts": {
 		"download": "echo '2024 TEMPEST GAMES'",
-		"install": "nu tempest.games --latest && na setup-db",
+		"install": "nup tempest.games --latest && na setup-db",
 		"checkAvailability": "./view-version.ts"
 	}
 }
