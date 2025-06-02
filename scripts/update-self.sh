@@ -1,7 +1,7 @@
 #!/bin/bash
 
-username=$(whoami)
+USERNAME=$(whoami)
 
 sudo git pull
 
-sudo chown $(username):$(username) ./package.json
+sudo chown $USERNAME:$USERNAME ./package.json
