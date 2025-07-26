@@ -3,7 +3,7 @@
   "workspaces": {
     "": {
       "dependencies": {
-        "tempest.games": "^0.2.25",
+        "tempest.games": "^0.2.26",
       },
       "devDependencies": {
         "@biomejs/biome": "2.1.2",
