@@ -8,7 +8,7 @@
 		"setup": "dotenv setup-db"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.1.2",
+		"@biomejs/biome": "2.1.3",
 		"@types/bun": "npm:bun-types@1.2.19",
 		"@types/node": "24.1.0",
 		"dotenv-cli": "9.0.0",
