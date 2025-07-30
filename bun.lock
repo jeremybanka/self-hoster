@@ -11,7 +11,7 @@
         "@types/node": "24.1.0",
         "dotenv-cli": "10.0.0",
         "drizzle-kit": "0.31.4",
-        "flightdeck": "0.2.52",
+        "flightdeck": "0.2.53",
         "typescript": "5.8.3",
       },
     },
@@ -213,7 +213,7 @@
 
     "arktype": ["arktype@2.1.20", "", { "dependencies": { "@ark/schema": "0.46.0", "@ark/util": "0.46.0" } }, "sha512-IZCEEXaJ8g+Ijd59WtSYwtjnqXiwM8sWQ5EjGamcto7+HVN9eK0C4p0zDlCuAwWhpqr6fIBkxPuYDl4/Mcj/+Q=="],
 
-    "atom.io": ["atom.io@0.33.21", "", { "peerDependencies": { "@floating-ui/react": ">=0.25.0", "@floating-ui/react-dom": ">=2.0.0", "@testing-library/react": ">=14.0.0", "@typescript-eslint/parser": ">=8.0.0", "eslint": ">=9.0.0", "happy-dom": ">=17.4.4", "motion": ">=11.0.0", "react": "^18.0.0 || ^19.0.0", "socket.io": ">=4.0.0", "socket.io-client": ">=4.0.0" }, "optionalPeers": ["@floating-ui/react", "@floating-ui/react-dom", "@testing-library/react", "@typescript-eslint/parser", "eslint", "happy-dom", "motion", "react", "socket.io", "socket.io-client"] }, "sha512-QTkgsePc9xlVPZYThlWLv6rJcM55e/G+imMLYoZG+7OEHPOUG6zX077wpa0vJlq0Ivt5h5GzhIIrJWRE1RU8Cw=="],
+    "atom.io": ["atom.io@0.34.0", "", { "peerDependencies": { "@floating-ui/react": ">=0.25.0", "@floating-ui/react-dom": ">=2.0.0", "@testing-library/react": ">=14.0.0", "@typescript-eslint/parser": ">=8.0.0", "eslint": ">=9.0.0", "happy-dom": ">=17.4.4", "motion": ">=11.0.0", "react": "^18.0.0 || ^19.0.0", "socket.io": ">=4.0.0", "socket.io-client": ">=4.0.0" }, "optionalPeers": ["@floating-ui/react", "@floating-ui/react-dom", "@testing-library/react", "@typescript-eslint/parser", "eslint", "happy-dom", "motion", "react", "socket.io", "socket.io-client"] }, "sha512-B0oxtwJbml6NUUbq2fl/7kdE9YUsF5ZmOfTNdParscAbo4maaMwYpgq0Lj2VIuXBt40XQu2DHxT/z1kzn9s/Qw=="],
 
     "balanced-match": ["balanced-match@1.0.2", "", {}, "sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw=="],
 
@@ -311,7 +311,7 @@
 
     "fast-deep-equal": ["fast-deep-equal@2.0.1", "", {}, "sha512-bCK/2Z4zLidyB4ReuIsvALH6w31YfAQDmXMqMx6FyfHqvBxtjC0eRumeSu4Bs3XtXwpyIywtSTrVT99BxY1f9w=="],
 
-    "flightdeck": ["flightdeck@0.2.52", "", { "dependencies": { "@t3-oss/env-core": "0.13.8", "atom.io": "0.33.21", "comline": "0.3.0", "cron": "4.3.2", "safedeposit": "0.1.1", "zod": "3.25.76" }, "bin": { "flightdeck": "bin/flightdeck.bin.js", "klaxon": "bin/klaxon.bin.js" } }, "sha512-CUrU7KH+qY8AnZn4JBnxwYSQd0Sswg9KAqlXYgpBqWGLpnG52X1qZhi29l+maNqKc0HG4tuiWoT6JIyWaSdpLA=="],
+    "flightdeck": ["flightdeck@0.2.53", "", { "dependencies": { "@t3-oss/env-core": "0.13.8", "atom.io": "0.34.0", "comline": "0.3.0", "cron": "4.3.2", "safedeposit": "0.1.1", "zod": "3.25.76" }, "bin": { "flightdeck": "bin/flightdeck.bin.js", "klaxon": "bin/klaxon.bin.js" } }, "sha512-YIMRo+H5Z/hSK3SFcBSvUj8UYLhIeRU7be/Ofe5ddBFyxc1SUDOU9lr9VtZ0bV2OZfU52hn676eDx+jMsxHiAA=="],
 
     "foreground-child": ["foreground-child@3.3.1", "", { "dependencies": { "cross-spawn": "^7.0.6", "signal-exit": "^4.0.1" } }, "sha512-gIXjKqtFuWEgzFRJA9WCQeSJLZDjgJUOMCMzxtvFq/37KojM1BFGufqsCy0r4qSQmYLsZYMeyRqzIWOMup03sw=="],
 
@@ -582,8 +582,6 @@
     "string-width-cjs/strip-ansi": ["strip-ansi@6.0.1", "", { "dependencies": { "ansi-regex": "^5.0.1" } }, "sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A=="],
 
     "strip-ansi-cjs/ansi-regex": ["ansi-regex@5.0.1", "", {}, "sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ=="],
-
-    "tempest.games/atom.io": ["atom.io@0.34.0", "", { "peerDependencies": { "@floating-ui/react": ">=0.25.0", "@floating-ui/react-dom": ">=2.0.0", "@testing-library/react": ">=14.0.0", "@typescript-eslint/parser": ">=8.0.0", "eslint": ">=9.0.0", "happy-dom": ">=17.4.4", "motion": ">=11.0.0", "react": "^18.0.0 || ^19.0.0", "socket.io": ">=4.0.0", "socket.io-client": ">=4.0.0" }, "optionalPeers": ["@floating-ui/react", "@floating-ui/react-dom", "@testing-library/react", "@typescript-eslint/parser", "eslint", "happy-dom", "motion", "react", "socket.io", "socket.io-client"] }, "sha512-B0oxtwJbml6NUUbq2fl/7kdE9YUsF5ZmOfTNdParscAbo4maaMwYpgq0Lj2VIuXBt40XQu2DHxT/z1kzn9s/Qw=="],
 
     "wrap-ansi/string-width": ["string-width@5.1.2", "", { "dependencies": { "eastasianwidth": "^0.2.0", "emoji-regex": "^9.2.2", "strip-ansi": "^7.0.1" } }, "sha512-HnLOCR3vjcY8beoNLtcjZ5/nxn2afmME6lhrDrebokqMap+XbeW8n9TXpPDOqdGK5qcI3oT0GKTW6wC7EMiVqA=="],
 
