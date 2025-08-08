@@ -10,7 +10,7 @@
 	"devDependencies": {
 		"@biomejs/biome": "2.1.4",
 		"@types/bun": "npm:bun-types@1.2.19",
-		"@types/node": "24.2.0",
+		"@types/node": "24.2.1",
 		"dotenv-cli": "10.0.0",
 		"drizzle-kit": "0.31.4",
 		"flightdeck": "0.2.56",
