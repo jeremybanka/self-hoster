@@ -9,7 +9,7 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.2.4",
-		"@types/bun": "npm:bun-types@1.2.21",
+		"@types/bun": "npm:bun-types@1.2.22",
 		"@types/node": "24.3.3",
 		"dotenv-cli": "10.0.0",
 		"drizzle-kit": "0.31.4",
