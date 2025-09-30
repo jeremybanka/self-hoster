@@ -14,7 +14,7 @@
 		"dotenv-cli": "10.0.0",
 		"drizzle-kit": "0.31.5",
 		"flightdeck": "0.2.84",
-		"typescript": "5.9.2"
+		"typescript": "5.9.3"
 	},
 	"dependencies": {
 		"tempest.games": "^0.2.62"
