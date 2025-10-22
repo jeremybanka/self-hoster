@@ -13,7 +13,7 @@
 		"@types/node": "24.9.1",
 		"dotenv-cli": "10.0.0",
 		"drizzle-kit": "0.31.5",
-		"flightdeck": "0.2.87",
+		"flightdeck": "0.2.88",
 		"typescript": "5.9.3"
 	},
 	"dependencies": {
