@@ -11,7 +11,7 @@
         "@types/node": "24.10.0",
         "dotenv-cli": "11.0.0",
         "drizzle-kit": "0.31.6",
-        "flightdeck": "0.2.95",
+        "flightdeck": "0.2.96",
         "typescript": "5.9.3",
       },
     },
@@ -249,7 +249,7 @@
 
     "color-name": ["color-name@1.1.4", "", {}, "sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA=="],
 
-    "comline": ["comline@0.4.2", "", { "dependencies": { "picocolors": "1.1.1", "treetrunks": "0.1.5" }, "peerDependencies": { "arktype": "^2.1.25", "zod": "^4.1.12" }, "optionalPeers": ["arktype", "zod"] }, "sha512-7vUbXnbzebwi8d260u6dE5EMyGBmQdQZUUaSlmml2Lc2illQ9Sp7iSGePvl08pAQXseBE4TTDmmXGYGQSrgiuQ=="],
+    "comline": ["comline@0.4.3", "", { "dependencies": { "picocolors": "1.1.1", "treetrunks": "0.1.5" }, "peerDependencies": { "arktype": "^2.1.25", "zod": "^4.1.12" }, "optionalPeers": ["arktype", "zod"] }, "sha512-95UoE6/U4C3FGw8ZCgcv199NAlLe9T2ropl0hZch6DvMA4RizG11t6zhdqkrHcj8lppytmOowNsEhlj3PlWPeg=="],
 
     "commander": ["commander@13.1.0", "", {}, "sha512-/rFeCpNJQbhSZjGVwO9RFV3xPqbnERS8MmIQzCtD/zl6gpJuV/bMLuN92oG3F7d8oDEHHRrujSXNUr8fpjntKw=="],
 
@@ -261,7 +261,7 @@
 
     "cors": ["cors@2.8.5", "", { "dependencies": { "object-assign": "^4", "vary": "^1" } }, "sha512-KIHbLJqu73RGr/hnbrO9uBeixNGuvSQjul/jdFvS/KFSIH1hWVd1ng7zOHx+YrEfInLG7q4n6GHQ9cDtxv/P6g=="],
 
-    "cron": ["cron@4.3.3", "", { "dependencies": { "@types/luxon": "~3.7.0", "luxon": "~3.7.0" } }, "sha512-B/CJj5yL3sjtlun6RtYHvoSB26EmQ2NUmhq9ZiJSyKIM4K/fqfh9aelDFlIayD2YMeFZqWLi9hHV+c+pq2Djkw=="],
+    "cron": ["cron@4.3.4", "", { "dependencies": { "@types/luxon": "~3.7.0", "luxon": "~3.7.0" } }, "sha512-OiO0l73MGhQOZQCjYZ0v7r8yFWpBOWteemwR1RIxiHtfVsIOwiTJZDvg7GmKzggkwC0RO8tI3P1QYBUCIZNYRQ=="],
 
     "cross-spawn": ["cross-spawn@7.0.6", "", { "dependencies": { "path-key": "^3.1.0", "shebang-command": "^2.0.0", "which": "^2.0.1" } }, "sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA=="],
 
@@ -323,7 +323,7 @@
 
     "fastest-levenshtein": ["fastest-levenshtein@1.0.16", "", {}, "sha512-eRnCtTTtGZFpQCwhJiUOuxPQWRXVKYDn0b2PeHfXL6/Zi53SLAzAHfVhVWK2AryC/WH05kGfxhFIPvTF0SXQzg=="],
 
-    "flightdeck": ["flightdeck@0.2.95", "", { "dependencies": { "@t3-oss/env-core": "0.13.8", "arktype": "2.1.25", "atom.io": "0.44.3", "comline": "0.4.2", "cron": "4.3.3", "safedeposit": "0.1.2" }, "bin": { "flightdeck": "bin/flightdeck.bin.js", "klaxon": "bin/klaxon.bin.js" } }, "sha512-fTih5kY6PO3bOg8WOAKjtrq3mec1MPEdAqdHtDwyDhC/qk1FciYKDEyElpxIoZSr1+cLmvkRUkjL61pof3OjfQ=="],
+    "flightdeck": ["flightdeck@0.2.96", "", { "dependencies": { "@t3-oss/env-core": "0.13.8", "arktype": "2.1.25", "atom.io": "0.44.3", "comline": "0.4.3", "cron": "4.3.4", "safedeposit": "0.1.2" }, "bin": { "flightdeck": "bin/flightdeck.bin.js", "klaxon": "bin/klaxon.bin.js" } }, "sha512-1ASvRPxvW84zCNl1Y0l8bBFu+/nW5tGvVuS9uSNqZtzGZ54KD1Db/ZHnaEGUkWS3qxZcLoT+whUcof6gU51qaQ=="],
 
     "foreground-child": ["foreground-child@3.3.1", "", { "dependencies": { "cross-spawn": "^7.0.6", "signal-exit": "^4.0.1" } }, "sha512-gIXjKqtFuWEgzFRJA9WCQeSJLZDjgJUOMCMzxtvFq/37KojM1BFGufqsCy0r4qSQmYLsZYMeyRqzIWOMup03sw=="],
 
@@ -602,6 +602,10 @@
     "strip-ansi-cjs/ansi-regex": ["ansi-regex@5.0.1", "", {}, "sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ=="],
 
     "svix/@types/node": ["@types/node@22.18.11", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-Gd33J2XIrXurb+eT2ktze3rJAfAp9ZNjlBdh4SVgyrKEOADwCbdUDaK7QgJno8Ue4kcajscsKqu6n8OBG3hhCQ=="],
+
+    "tempest.games/cron": ["cron@4.3.3", "", { "dependencies": { "@types/luxon": "~3.7.0", "luxon": "~3.7.0" } }, "sha512-B/CJj5yL3sjtlun6RtYHvoSB26EmQ2NUmhq9ZiJSyKIM4K/fqfh9aelDFlIayD2YMeFZqWLi9hHV+c+pq2Djkw=="],
+
+    "varmint/comline": ["comline@0.4.2", "", { "dependencies": { "picocolors": "1.1.1", "treetrunks": "0.1.5" }, "peerDependencies": { "arktype": "^2.1.25", "zod": "^4.1.12" }, "optionalPeers": ["arktype", "zod"] }, "sha512-7vUbXnbzebwi8d260u6dE5EMyGBmQdQZUUaSlmml2Lc2illQ9Sp7iSGePvl08pAQXseBE4TTDmmXGYGQSrgiuQ=="],
 
     "wrap-ansi/string-width": ["string-width@5.1.2", "", { "dependencies": { "eastasianwidth": "^0.2.0", "emoji-regex": "^9.2.2", "strip-ansi": "^7.0.1" } }, "sha512-HnLOCR3vjcY8beoNLtcjZ5/nxn2afmME6lhrDrebokqMap+XbeW8n9TXpPDOqdGK5qcI3oT0GKTW6wC7EMiVqA=="],
 
