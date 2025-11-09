@@ -40,7 +40,7 @@ jobs:
           nr start
           tempest_version=$(cat node_modules/tempest.games/package.json | jq -r .version)
           echo "tempest version: $tempest_version"
-          sleep 2
+          sleep 10
           if ! grep -q "🛫 frontend v$tempest_version running at http://localhost:3333/" logs/flightdeck.jsonl; then
             echo "🚨 tempest.games::frontend did not start up in time"
             cat logs/flightdeck.jsonl
