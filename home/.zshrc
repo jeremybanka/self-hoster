@@ -7,12 +7,8 @@
 
 # languages ####################################################################
 
-  # node <- schniz/fnm 
-    FNM_PATH=$HOME/.local/share/fnm
-    if [ -d "$FNM_PATH" ]; then
-      PATH=$PATH:$FNM_PATH
-      eval "`fnm env --use-on-cd --shell=zsh --corepack-enabled`"
-    fi
+  # (node, bun) <- mise
+    eval "$($HOME/.local/bin/mise activate zsh)"
   
   # global node_modules <- bun
     BUN_PATH=$HOME/.bun
