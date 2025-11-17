@@ -17,4 +17,4 @@ sudo apt install -y \
   zsh
 
 sudo /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh -y
-sudo apt install -y postgresql-17
+sudo apt install -y postgresql-18
