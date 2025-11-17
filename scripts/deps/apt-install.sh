@@ -12,7 +12,6 @@ sudo apt install -y \
   openssh-server \
   postgresql-common \
   python3-certbot-nginx \
-  snort \
   stow \
   vim \
   zsh

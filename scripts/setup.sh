@@ -5,12 +5,12 @@ source ~/.zshrc
 
 echo "🔧 setup.sh: ./scripts/deps/install-zsh.sh"
 ./scripts/deps/install-omz.sh
-echo "🔧 setup.sh: ./scripts/deps/install-fnm.sh"
-./scripts/deps/install-fnm.sh
 echo "🔧 setup.sh: ./scripts/deps/install-bun.sh"
 ./scripts/deps/install-bun.sh
 echo "🔧 setup.sh: ./scripts/deps/apt-install.sh"
 ./scripts/deps/apt-install.sh
+echo "🔧 setup.sh: ./scripts/deps/install-mise.sh"
+./scripts/deps/install-mise.sh
 
 echo "🔧 setup.sh: ./scripts/cfg/stow-adopt-stash.sh"
 ./scripts/cfg/stow-adopt-stash.sh
