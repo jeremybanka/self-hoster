@@ -8,7 +8,7 @@
 # languages ####################################################################
 
   # (node, bun) <- mise
-    eval "$($HOME/.local/bin/mise activate zsh)"
+    eval "$(mise activate zsh)"
   
   # global node_modules <- bun
     BUN_PATH=$HOME/.bun
