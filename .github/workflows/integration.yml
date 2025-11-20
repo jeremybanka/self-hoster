@@ -28,7 +28,7 @@ jobs:
         run: sudo apt install zsh
 
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - run: ./scripts/setup.sh
       - run: ./scripts/setup.sh
