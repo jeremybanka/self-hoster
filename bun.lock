@@ -12,7 +12,7 @@
         "@types/node": "25.0.10",
         "dotenv-cli": "11.0.0",
         "drizzle-kit": "0.31.8",
-        "flightdeck": "0.3.39",
+        "flightdeck": "0.3.40",
         "typescript": "5.9.3",
       },
     },
@@ -396,7 +396,7 @@
 
     "fflate": ["fflate@0.6.10", "", {}, "sha512-IQrh3lEPM93wVCEczc9SaAOvkmcoQn/G8Bo1e8ZPlY3X3bnAxWaBdvTdvM1hP62iZp0BXWDy4vTAy4fF0+Dlpg=="],
 
-    "flightdeck": ["flightdeck@0.3.39", "", { "dependencies": { "@t3-oss/env-core": "0.13.10", "arktype": "2.1.29", "atom.io": "0.46.19", "comline": "0.4.3", "cron": "4.4.0", "safedeposit": "0.1.2" }, "bin": { "flightdeck": "bin/flightdeck.bin.js", "klaxon": "bin/klaxon.bin.js" } }, "sha512-MZu79AsOSRi7xO8i4TRqZfgiGPceVXbakfKS0OHwxQI+s40ba5DDBLuQ5uXUuKm2wUIuRz7DT8cF28m3evsPcg=="],
+    "flightdeck": ["flightdeck@0.3.40", "", { "dependencies": { "@t3-oss/env-core": "0.13.10", "arktype": "2.1.29", "atom.io": "0.46.19", "comline": "0.4.3", "cron": "4.4.0", "safedeposit": "0.1.2" }, "peerDependencies": { "zod": "^4" }, "bin": { "flightdeck": "bin/flightdeck.bin.js", "klaxon": "bin/klaxon.bin.js" } }, "sha512-b1PUPrEm17/SbrQn/TVxhOw3HQvhbhYhgp1MgwZWkyIeOm1rboOwbjT0yA0SF16UJRGdx7lWqMYxWTUOncnpOw=="],
 
     "foreground-child": ["foreground-child@3.3.1", "", { "dependencies": { "cross-spawn": "^7.0.6", "signal-exit": "^4.0.1" } }, "sha512-gIXjKqtFuWEgzFRJA9WCQeSJLZDjgJUOMCMzxtvFq/37KojM1BFGufqsCy0r4qSQmYLsZYMeyRqzIWOMup03sw=="],
 
