@@ -4,7 +4,7 @@
   "workspaces": {
     "": {
       "dependencies": {
-        "tempest.games": "^0.3.18",
+        "tempest.games": "^0.3.19",
       },
       "devDependencies": {
         "@biomejs/biome": "2.3.13",
@@ -662,7 +662,7 @@
 
     "tailwindcss": ["tailwindcss@4.1.18", "", {}, "sha512-4+Z+0yiYyEtUVCScyfHCxOYP06L5Ne+JiHhY2IjR2KWMIWhJOYZKLSGZaP5HkZ8+bY0cxfzwDE5uOmzFXyIwxw=="],
 
-    "tempest.games": ["tempest.games@0.3.18", "", { "dependencies": { "@floating-ui/react": "0.27.17", "@js-temporal/polyfill": "0.5.1", "@react-email/components": "1.0.6", "@react-spring/three": "10.0.3", "@react-three/drei": "10.7.7", "@react-three/fiber": "9.5.0", "@t3-oss/env-core": "0.13.10", "@trpc/client": "11.9.0", "@trpc/server": "11.9.0", "arktype": "2.1.29", "atom.io": "0.46.22", "cron": "4.4.0", "drizzle-orm": "0.45.1", "motion": "12.29.2", "nanoid": "5.1.6", "openai": "6.17.0", "postgres": "3.4.8", "react": "19.2.4", "react-dom": "19.2.4", "react-email": "5.2.5", "resend": "6.9.1", "safedeposit": "0.1.2", "safegen": "0.8.3", "socket.io": "4.8.3", "socket.io-client": "4.8.3", "three": "0.182.0", "three-stdlib": "2.36.1", "treetrunks": "0.1.5" }, "bin": { "frontend": "bin/frontend.bun.js", "backend": "bin/backend.bun.js", "setup-db": "bin/setup-db.bun.js", "interactive-db": "bin/interactive-db.bun.js" } }, "sha512-FOEb2NJt7Ajwmr9Lv97YGKgbVDkm94mNvV7bWlYesbWfruVltPgbmECqXVguxuY9khHDKsZB+Ut00CIpp1UNkw=="],
+    "tempest.games": ["tempest.games@0.3.19", "", { "dependencies": { "@floating-ui/react": "0.27.17", "@js-temporal/polyfill": "0.5.1", "@react-email/components": "1.0.6", "@react-spring/three": "10.0.3", "@react-three/drei": "10.7.7", "@react-three/fiber": "9.5.0", "@t3-oss/env-core": "0.13.10", "@trpc/client": "11.9.0", "@trpc/server": "11.9.0", "arktype": "2.1.29", "atom.io": "0.46.22", "cron": "4.4.0", "drizzle-orm": "0.45.1", "motion": "12.29.2", "nanoid": "5.1.6", "openai": "6.17.0", "postgres": "3.4.8", "react": "19.2.4", "react-dom": "19.2.4", "react-email": "5.2.5", "resend": "6.9.1", "safedeposit": "0.1.2", "safegen": "0.8.3", "socket.io": "4.8.3", "socket.io-client": "4.8.3", "three": "0.182.0", "three-stdlib": "2.36.1", "treetrunks": "0.1.5" }, "bin": { "frontend": "bin/frontend.bun.js", "backend": "bin/backend.bun.js", "setup-db": "bin/setup-db.bun.js", "interactive-db": "bin/interactive-db.bun.js" } }, "sha512-tBTyKbPpwFJr6ZumyLmwatILjeBw7npqYPRs4FAjKzo7DdITD3aflpAHUkQ0PypGsxuOmrWHG7v4dHQ7lkPeaw=="],
 
     "three": ["three@0.182.0", "", {}, "sha512-GbHabT+Irv+ihI1/f5kIIsZ+Ef9Sl5A1Y7imvS5RQjWgtTPfPnZ43JmlYI7NtCRDK9zir20lQpfg8/9Yd02OvQ=="],
 
