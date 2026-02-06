@@ -12,7 +12,7 @@
         "@types/node": "25.2.1",
         "dotenv-cli": "11.0.0",
         "drizzle-kit": "0.31.8",
-        "flightdeck": "0.3.43",
+        "flightdeck": "0.3.44",
         "typescript": "5.9.3",
       },
     },
@@ -268,7 +268,7 @@
 
     "arktype": ["arktype@2.1.29", "", { "dependencies": { "@ark/schema": "0.56.0", "@ark/util": "0.56.0", "arkregex": "0.0.5" } }, "sha512-jyfKk4xIOzvYNayqnD8ZJQqOwcrTOUbIU4293yrzAjA3O1dWh61j71ArMQ6tS/u4pD7vabSPe7nG3RCyoXW6RQ=="],
 
-    "atom.io": ["atom.io@0.46.22", "", { "peerDependencies": { "@floating-ui/react": ">=0.25.0", "@floating-ui/react-dom": ">=2.0.0", "@testing-library/react": ">=14.0.0", "@typescript-eslint/parser": ">=8.0.0", "eslint": ">=9.0.0", "happy-dom": ">=17.4.4", "motion": ">=11.0.0", "react": "^18.0.0 || ^19.0.0", "socket.io": ">=4.0.0", "socket.io-client": ">=4.0.0" }, "optionalPeers": ["@floating-ui/react", "@floating-ui/react-dom", "@testing-library/react", "@typescript-eslint/parser", "eslint", "happy-dom", "motion", "react", "socket.io", "socket.io-client"] }, "sha512-pfufdg4J7N7Y901qQ277JB9csHb+QWxHeHxNNksVEslc5o8p4idbyTljwv0NNqBPWQk0DYCpzw/2GVzU4eiiIw=="],
+    "atom.io": ["atom.io@0.46.23", "", { "peerDependencies": { "@floating-ui/react": ">=0.25.0", "@floating-ui/react-dom": ">=2.0.0", "@testing-library/react": ">=14.0.0", "@typescript-eslint/parser": ">=8.0.0", "eslint": ">=9.0.0", "happy-dom": ">=17.4.4", "motion": ">=11.0.0", "react": "^18.0.0 || ^19.0.0", "socket.io": ">=4.0.0", "socket.io-client": ">=4.0.0" }, "optionalPeers": ["@floating-ui/react", "@floating-ui/react-dom", "@testing-library/react", "@typescript-eslint/parser", "eslint", "happy-dom", "motion", "react", "socket.io", "socket.io-client"] }, "sha512-y4YamUrf8DhESuwwAg06f5k8723FoNCHqxAPyLb2xQoz4q0LRRKfd6VaLSm9dyA6Gg9ZtPxv8YLr4tiGCNwPsw=="],
 
     "atomically": ["atomically@2.1.0", "", { "dependencies": { "stubborn-fs": "^2.0.0", "when-exit": "^2.1.4" } }, "sha512-+gDffFXRW6sl/HCwbta7zK4uNqbPjv4YJEAdz7Vu+FLQHe77eZ4bvbJGi4hE0QPeJlMYMA3piXEr1UL3dAwx7Q=="],
 
@@ -400,7 +400,7 @@
 
     "fflate": ["fflate@0.6.10", "", {}, "sha512-IQrh3lEPM93wVCEczc9SaAOvkmcoQn/G8Bo1e8ZPlY3X3bnAxWaBdvTdvM1hP62iZp0BXWDy4vTAy4fF0+Dlpg=="],
 
-    "flightdeck": ["flightdeck@0.3.43", "", { "dependencies": { "@t3-oss/env-core": "0.13.10", "arktype": "2.1.29", "atom.io": "0.46.22", "comline": "0.4.3", "cron": "4.4.0", "safedeposit": "0.1.2" }, "peerDependencies": { "zod": "^4" }, "bin": { "flightdeck": "bin/flightdeck.bin.js", "klaxon": "bin/klaxon.bin.js" } }, "sha512-OZ0wK7+bsYSTCPzoJ6YnOmv7Q4RedKXDQZipnxF4mb12hW6EG2tbm+x+py/h6qbbjklpmztn7//ruRBMIxZpOA=="],
+    "flightdeck": ["flightdeck@0.3.44", "", { "dependencies": { "@t3-oss/env-core": "0.13.10", "arktype": "2.1.29", "atom.io": "0.46.23", "comline": "0.4.3", "cron": "4.4.0", "safedeposit": "0.1.2" }, "peerDependencies": { "zod": "^4" }, "bin": { "flightdeck": "bin/flightdeck.bin.js", "klaxon": "bin/klaxon.bin.js" } }, "sha512-nUIiRQiyJrChPbgRcy/hm+oSvXYIyLEF/7xdifBJ2ivhGeexs8oFvxbWIoiCc2GicWOhS6B+5yU2fXFGcni33Q=="],
 
     "foreground-child": ["foreground-child@3.3.1", "", { "dependencies": { "cross-spawn": "^7.0.6", "signal-exit": "^4.0.1" } }, "sha512-gIXjKqtFuWEgzFRJA9WCQeSJLZDjgJUOMCMzxtvFq/37KojM1BFGufqsCy0r4qSQmYLsZYMeyRqzIWOMup03sw=="],
 
@@ -783,8 +783,6 @@
     "string-width-cjs/strip-ansi": ["strip-ansi@6.0.1", "", { "dependencies": { "ansi-regex": "^5.0.1" } }, "sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A=="],
 
     "strip-ansi-cjs/ansi-regex": ["ansi-regex@5.0.1", "", {}, "sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ=="],
-
-    "tempest.games/atom.io": ["atom.io@0.46.23", "", { "peerDependencies": { "@floating-ui/react": ">=0.25.0", "@floating-ui/react-dom": ">=2.0.0", "@testing-library/react": ">=14.0.0", "@typescript-eslint/parser": ">=8.0.0", "eslint": ">=9.0.0", "happy-dom": ">=17.4.4", "motion": ">=11.0.0", "react": "^18.0.0 || ^19.0.0", "socket.io": ">=4.0.0", "socket.io-client": ">=4.0.0" }, "optionalPeers": ["@floating-ui/react", "@floating-ui/react-dom", "@testing-library/react", "@typescript-eslint/parser", "eslint", "happy-dom", "motion", "react", "socket.io", "socket.io-client"] }, "sha512-y4YamUrf8DhESuwwAg06f5k8723FoNCHqxAPyLb2xQoz4q0LRRKfd6VaLSm9dyA6Gg9ZtPxv8YLr4tiGCNwPsw=="],
 
     "tunnel-rat/zustand": ["zustand@4.5.7", "", { "dependencies": { "use-sync-external-store": "^1.2.2" }, "peerDependencies": { "@types/react": ">=16.8", "immer": ">=9.0.6", "react": ">=16.8" }, "optionalPeers": ["@types/react", "immer", "react"] }, "sha512-CHOUy7mu3lbD6o6LJLfllpjkzhHXSBlX8B9+qPddUsIfeF5S/UZ5q0kmCsnRqT1UHFQZchNFDDzMbQsuesHWlw=="],
 
