@@ -5,7 +5,7 @@
     "": {
       "dependencies": {
         "@antfu/ni": "29.0.0",
-        "diff-so-fancy": "1.4.3",
+        "diff-so-fancy": "1.4.6",
       },
     },
   },
@@ -14,7 +14,7 @@
 
     "ansis": ["ansis@4.2.0", "", {}, "sha512-HqZ5rWlFjGiV0tDm3UxxgNRqsOTniqoKZu0pIAfh7TZQMGuZK+hH0drySty0si0QXj1ieop4+SkSfPZBPPkHig=="],
 
-    "diff-so-fancy": ["diff-so-fancy@1.4.3", "", { "bin": { "diff-so-fancy": "third_party/build_fatpack/diff-so-fancy" } }, "sha512-ZXNe6ZLdzCHt5cdMPwQOsuNcPI86VYArxloIqmedkTK3qlii59gHe5eR82CrNrc4aZ/A0V1b7askmDzBwftZKA=="],
+    "diff-so-fancy": ["diff-so-fancy@1.4.6", "", { "bin": { "diff-so-fancy": "dist/diff-so-fancy" } }, "sha512-v/9A1OiuVtlIK8fORT40oW4uPoADv5nHXUXldcU9x8soVBSgDHmqEEtAWuXO1gjoSxZhJ93t+AC2JbBSmIUS7A=="],
 
     "fdir": ["fdir@6.5.0", "", { "peerDependencies": { "picomatch": "^3 || ^4" }, "optionalPeers": ["picomatch"] }, "sha512-tIbYtZbucOs0BRGqPJkshJUYdL+SDH7dVM8gjy+ERp3WAUjLEFJE+02kanyHtwjWOnwrKYBiwAmM0p4kLJAnXg=="],
 
