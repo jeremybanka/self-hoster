@@ -1,6 +1,6 @@
 {
 	"dependencies": {
-		"@antfu/ni": "29.0.0",
+		"@antfu/ni": "30.0.0",
 		"diff-so-fancy": "1.4.6"
 	}
 }
