@@ -4,7 +4,7 @@
   "workspaces": {
     "": {
       "dependencies": {
-        "tempest.games": "^0.3.32",
+        "tempest.games": "^0.3.33",
       },
       "devDependencies": {
         "@biomejs/biome": "2.4.10",
@@ -542,9 +542,9 @@
 
     "prompts": ["prompts@2.4.2", "", { "dependencies": { "kleur": "^3.0.3", "sisteransi": "^1.0.5" } }, "sha512-NxNv/kLguCA7p3jE8oL2aEBsrJWgAakBpgmgK6lpPWV+WuOmY6r2/zbAVnP+T8bQlA0nzHXSJSJW0Hq7ylaD2Q=="],
 
-    "react": ["react@19.2.4", "", {}, "sha512-9nfp2hYpCwOjAN+8TZFGhtWEwgvWHXqESH8qT89AT/lWklpLON22Lc8pEtnpsZz7VmawabSU0gCjnj8aC0euHQ=="],
+    "react": ["react@19.2.5", "", {}, "sha512-llUJLzz1zTUBrskt2pwZgLq59AemifIftw4aB7JxOqf1HY2FDaGDxgwpAPVzHU1kdWabH7FauP4i1oEeer2WCA=="],
 
-    "react-dom": ["react-dom@19.2.4", "", { "dependencies": { "scheduler": "^0.27.0" }, "peerDependencies": { "react": "^19.2.4" } }, "sha512-AXJdLo8kgMbimY95O2aKQqsz2iWi9jMgKJhRBAxECE4IFxfcazB2LmzloIoibJI3C12IlY20+KFaLv+71bUJeQ=="],
+    "react-dom": ["react-dom@19.2.5", "", { "dependencies": { "scheduler": "^0.27.0" }, "peerDependencies": { "react": "^19.2.5" } }, "sha512-J5bAZz+DXMMwW/wV3xzKke59Af6CHY7G4uYLN1OvBcKEsWOs4pQExj86BBKamxl/Ik5bx9whOrvBlSDfWzgSag=="],
 
     "react-email": ["react-email@5.2.10", "", { "dependencies": { "@babel/parser": "7.27.0", "@babel/traverse": "7.27.0", "chokidar": "^4.0.3", "commander": "^13.0.0", "conf": "^15.0.2", "debounce": "^2.0.0", "esbuild": "0.27.3", "glob": "^13.0.6", "jiti": "2.4.2", "log-symbols": "^7.0.0", "mime-types": "^3.0.0", "normalize-path": "^3.0.0", "nypm": "0.6.2", "ora": "^8.0.0", "prompts": "2.4.2", "socket.io": "^4.8.1", "tsconfig-paths": "4.2.0" }, "bin": { "email": "dist/index.mjs" } }, "sha512-Ys8yR5/a0nXf5u2GlT2UV93PJHC3ZnuMnNebEn7I5UE9XfMFPtlpgDs02mPJOJn49fhJjDTWIUlZD1vmQPDgJg=="],
 
@@ -564,7 +564,7 @@
 
     "safedeposit": ["safedeposit@0.1.2", "", {}, "sha512-XbBgdsid1m9zlket6HalF4v6J+cIg6ctduHGvzuIE1uiBv/kRVSQoTtj3/Y8fa9VekpxAwOe+vrCoJrauiMlJg=="],
 
-    "safegen": ["safegen@0.8.7", "", { "dependencies": { "@standard-schema/spec": "1.1.0", "atom.io": "0.46.24", "varmint": "0.5.12" }, "peerDependencies": { "@anthropic-ai/sdk": ">=0.60.0", "@google/genai": "^1.13.0", "arktype": ">=2.1.0", "ollama": ">=0.5.0", "openai": "^5.0.0 || ^6.0.0", "zod": ">=3.25.0" }, "optionalPeers": ["@anthropic-ai/sdk", "arktype", "ollama", "openai", "zod"] }, "sha512-dQvOhy1sHZPRPvDvbCbGRrGtce3KzONGrl9W09b6ZyaCnaMd2mMabQ9mxDEWEszFVpXGRrzHSIB4MDS6XHXrqw=="],
+    "safegen": ["safegen@0.8.8", "", { "dependencies": { "@standard-schema/spec": "1.1.0", "atom.io": "0.46.32", "varmint": "0.5.12" }, "peerDependencies": { "@anthropic-ai/sdk": ">=0.60.0", "@google/genai": "^1.13.0", "arktype": ">=2.1.0", "ollama": ">=0.5.0", "openai": "^5.0.0 || ^6.0.0", "zod": ">=3.25.0" }, "optionalPeers": ["@anthropic-ai/sdk", "arktype", "ollama", "openai", "zod"] }, "sha512-UdA8C+JBCMuxb10j7rv6dv4fThy5RMY+1eqOBwzYkIwmdqIuwKJpg7LLzG1BvjiaWmAJEbJRxk/7+hXdczmhvg=="],
 
     "scheduler": ["scheduler@0.27.0", "", {}, "sha512-eNv+WrVbKu1f3vbYJT/xtiF5syA5HPIMtf9IgY/nKg0sWqzAUEvqY/xm7OcZc/qafLx/iO9FgOmeSAp4v5ti/Q=="],
 
@@ -620,7 +620,7 @@
 
     "tailwindcss": ["tailwindcss@4.1.18", "", {}, "sha512-4+Z+0yiYyEtUVCScyfHCxOYP06L5Ne+JiHhY2IjR2KWMIWhJOYZKLSGZaP5HkZ8+bY0cxfzwDE5uOmzFXyIwxw=="],
 
-    "tempest.games": ["tempest.games@0.3.32", "", { "dependencies": { "@floating-ui/react": "0.27.19", "@js-temporal/polyfill": "0.5.1", "@react-email/components": "1.0.11", "@react-spring/three": "10.0.3", "@react-three/drei": "10.7.7", "@react-three/fiber": "9.5.0", "@t3-oss/env-core": "0.13.11", "@trpc/client": "11.16.0", "@trpc/server": "11.16.0", "arktype": "2.2.0", "atom.io": "0.46.32", "cron": "4.4.0", "drizzle-orm": "0.45.2", "motion": "12.38.0", "nanoid": "5.1.7", "openai": "6.33.0", "postgres": "3.4.9", "react": "19.2.4", "react-dom": "19.2.4", "react-email": "5.2.10", "resend": "6.10.0", "safedeposit": "0.1.2", "safegen": "0.8.7", "socket.io": "4.8.3", "socket.io-client": "4.8.3", "three": "0.183.2", "three-stdlib": "2.36.1", "treetrunks": "0.1.6" }, "bin": { "frontend": "bin/frontend.bun.js", "backend": "bin/backend.bun.js", "setup-db": "bin/setup-db.bun.js", "interactive-db": "bin/interactive-db.bun.js" } }, "sha512-yLXJmsrmzQtxS42xjTZIJQoYC8YcuGzt1bYaIvMc3G2YfLMohyqAOwLDmVkrG6RrWIWoKNo508rfqj781UanUA=="],
+    "tempest.games": ["tempest.games@0.3.33", "", { "dependencies": { "@floating-ui/react": "0.27.19", "@js-temporal/polyfill": "0.5.1", "@react-email/components": "1.0.11", "@react-spring/three": "10.0.3", "@react-three/drei": "10.7.7", "@react-three/fiber": "9.5.0", "@t3-oss/env-core": "0.13.11", "@trpc/client": "11.16.0", "@trpc/server": "11.16.0", "arktype": "2.2.0", "atom.io": "0.46.33", "cron": "4.4.0", "drizzle-orm": "0.45.2", "motion": "12.38.0", "nanoid": "5.1.7", "openai": "6.33.0", "postgres": "3.4.9", "react": "19.2.5", "react-dom": "19.2.5", "react-email": "5.2.10", "resend": "6.10.0", "safedeposit": "0.1.2", "safegen": "0.8.8", "socket.io": "4.8.3", "socket.io-client": "4.8.3", "three": "0.183.2", "three-stdlib": "2.36.1", "treetrunks": "0.1.6" }, "bin": { "frontend": "bin/frontend.bun.js", "backend": "bin/backend.bun.js", "setup-db": "bin/setup-db.bun.js", "interactive-db": "bin/interactive-db.bun.js" } }, "sha512-7BTotJTsyRIlkMoznHburPy5SV+V6+MEYUj2kBfwjLGzI/tfitb2nc6HOYds2nKPW6ohJngZsoQxfnR2WSgnVA=="],
 
     "three": ["three@0.183.2", "", {}, "sha512-di3BsL2FEQ1PA7Hcvn4fyJOlxRRgFYBpMTcyOgkwJIaDOdJMebEFPA+t98EvjuljDx4hNulAGwF6KIjtwI5jgQ=="],
 
@@ -734,8 +734,6 @@
 
     "react-email/esbuild": ["esbuild@0.27.3", "", { "optionalDependencies": { "@esbuild/aix-ppc64": "0.27.3", "@esbuild/android-arm": "0.27.3", "@esbuild/android-arm64": "0.27.3", "@esbuild/android-x64": "0.27.3", "@esbuild/darwin-arm64": "0.27.3", "@esbuild/darwin-x64": "0.27.3", "@esbuild/freebsd-arm64": "0.27.3", "@esbuild/freebsd-x64": "0.27.3", "@esbuild/linux-arm": "0.27.3", "@esbuild/linux-arm64": "0.27.3", "@esbuild/linux-ia32": "0.27.3", "@esbuild/linux-loong64": "0.27.3", "@esbuild/linux-mips64el": "0.27.3", "@esbuild/linux-ppc64": "0.27.3", "@esbuild/linux-riscv64": "0.27.3", "@esbuild/linux-s390x": "0.27.3", "@esbuild/linux-x64": "0.27.3", "@esbuild/netbsd-arm64": "0.27.3", "@esbuild/netbsd-x64": "0.27.3", "@esbuild/openbsd-arm64": "0.27.3", "@esbuild/openbsd-x64": "0.27.3", "@esbuild/openharmony-arm64": "0.27.3", "@esbuild/sunos-x64": "0.27.3", "@esbuild/win32-arm64": "0.27.3", "@esbuild/win32-ia32": "0.27.3", "@esbuild/win32-x64": "0.27.3" }, "bin": { "esbuild": "bin/esbuild" } }, "sha512-8VwMnyGCONIs6cWue2IdpHxHnAjzxnw2Zr7MkVxB2vjmQ2ivqGFb4LEG3SMnv0Gb2F/G/2yA8zUaiL1gywDCCg=="],
 
-    "safegen/atom.io": ["atom.io@0.46.24", "", { "peerDependencies": { "@floating-ui/react": ">=0.25.0", "@floating-ui/react-dom": ">=2.0.0", "@testing-library/react": ">=14.0.0", "@typescript-eslint/parser": ">=8.0.0", "eslint": ">=9.0.0", "happy-dom": ">=17.4.4", "motion": ">=11.0.0", "react": "^18.0.0 || ^19.0.0", "socket.io": ">=4.0.0", "socket.io-client": ">=4.0.0" }, "optionalPeers": ["@floating-ui/react", "@floating-ui/react-dom", "@testing-library/react", "@typescript-eslint/parser", "eslint", "happy-dom", "motion", "react", "socket.io", "socket.io-client"] }, "sha512-NHMrrNYBiSpGMPUdrSUZ3uL4atwmvVJ0kXDckqzCXifd/nuWVi+yhSKYVHO4r+lH11jjkuW+oQdW3rcQFbYB4g=="],
-
     "socket.io-adapter/debug": ["debug@4.3.7", "", { "dependencies": { "ms": "^2.1.3" } }, "sha512-Er2nc/H7RrMXZBFCEim6TCmMk02Z8vLC2Rbi1KEBggpo0fS6l0S1nnapwmIi3yW/+GOJap1Krg4w0Hg80oCqgQ=="],
 
     "socket.io-adapter/ws": ["ws@8.17.1", "", { "peerDependencies": { "bufferutil": "^4.0.1", "utf-8-validate": ">=5.0.2" }, "optionalPeers": ["bufferutil", "utf-8-validate"] }, "sha512-6XQFvXTkbfUOZOKKILFG1PDK2NDQs4azKQl26T0YS5CxqWLgXajbPZ+h4gZekJyRqFU8pvnbAbbs/3TgRPy+GQ=="],
@@ -743,6 +741,8 @@
     "socket.io-parser/debug": ["debug@4.3.7", "", { "dependencies": { "ms": "^2.1.3" } }, "sha512-Er2nc/H7RrMXZBFCEim6TCmMk02Z8vLC2Rbi1KEBggpo0fS6l0S1nnapwmIi3yW/+GOJap1Krg4w0Hg80oCqgQ=="],
 
     "stats-gl/three": ["three@0.170.0", "", {}, "sha512-FQK+LEpYc0fBD+J8g6oSEyyNzjp+Q7Ks1C568WWaoMRLW+TkNNWmenWeGgJjV105Gd+p/2ql1ZcjYvNiPZBhuQ=="],
+
+    "tempest.games/atom.io": ["atom.io@0.46.33", "", { "peerDependencies": { "@floating-ui/react": ">=0.25.0", "@floating-ui/react-dom": ">=2.0.0", "@testing-library/react": ">=14.0.0", "@typescript-eslint/parser": ">=8.0.0", "eslint": ">=9.0.0", "happy-dom": ">=17.4.4", "motion": ">=11.0.0", "react": "^18.0.0 || ^19.0.0", "socket.io": ">=4.0.0", "socket.io-client": ">=4.0.0", "solid-js": "^1.9.0" }, "optionalPeers": ["@floating-ui/react", "@floating-ui/react-dom", "@testing-library/react", "@typescript-eslint/parser", "eslint", "happy-dom", "motion", "react", "socket.io", "socket.io-client", "solid-js"] }, "sha512-iYOR12ac+fVsE7TILjhUrKiuvEqwaaEOaLiwF5LUr/qgekLcK8IUOTbJLtIvdu4AEKCXUoZ40VzabVqtCWGKNA=="],
 
     "tsx/esbuild": ["esbuild@0.27.4", "", { "optionalDependencies": { "@esbuild/aix-ppc64": "0.27.4", "@esbuild/android-arm": "0.27.4", "@esbuild/android-arm64": "0.27.4", "@esbuild/android-x64": "0.27.4", "@esbuild/darwin-arm64": "0.27.4", "@esbuild/darwin-x64": "0.27.4", "@esbuild/freebsd-arm64": "0.27.4", "@esbuild/freebsd-x64": "0.27.4", "@esbuild/linux-arm": "0.27.4", "@esbuild/linux-arm64": "0.27.4", "@esbuild/linux-ia32": "0.27.4", "@esbuild/linux-loong64": "0.27.4", "@esbuild/linux-mips64el": "0.27.4", "@esbuild/linux-ppc64": "0.27.4", "@esbuild/linux-riscv64": "0.27.4", "@esbuild/linux-s390x": "0.27.4", "@esbuild/linux-x64": "0.27.4", "@esbuild/netbsd-arm64": "0.27.4", "@esbuild/netbsd-x64": "0.27.4", "@esbuild/openbsd-arm64": "0.27.4", "@esbuild/openbsd-x64": "0.27.4", "@esbuild/openharmony-arm64": "0.27.4", "@esbuild/sunos-x64": "0.27.4", "@esbuild/win32-arm64": "0.27.4", "@esbuild/win32-ia32": "0.27.4", "@esbuild/win32-x64": "0.27.4" }, "bin": { "esbuild": "bin/esbuild" } }, "sha512-Rq4vbHnYkK5fws5NF7MYTU68FPRE1ajX7heQ/8QXXWqNgqqJ/GkmmyxIzUnf2Sr/bakf8l54716CcMGHYhMrrQ=="],
 
